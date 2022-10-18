@@ -1,0 +1,1227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B52C397E289DBD9900CD050A /* IntuneMAMSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C397F289DBD9900CD050A /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C396E289DBD4100CD050A /* IntuneMAMSwiftStub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3984289DBD9900CD050A /* MAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3967289DBD4100CD050A /* MAPNextPluginSecurityOpenssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3985289DBD9900CD050A /* MAPNextPluginSwiftSupport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3960289DBD4100CD050A /* MAPNextPluginSwiftSupport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3986289DBD9900CD050A /* MAPNextPluginVpnMobileAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3969289DBD4100CD050A /* MAPNextPluginVpnMobileAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3987289DBD9900CD050A /* MCPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C396C289DBD4100CD050A /* MCPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3988289DBD9900CD050A /* MCPCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3961289DBD4100CD050A /* MCPCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C398A289DBD9900CD050A /* MCPPluginUnencryptedFile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C396D289DBD4100CD050A /* MCPPluginUnencryptedFile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C398B289DBD9900CD050A /* MobileAccessApi.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C398C289DBD9900CD050A /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3968289DBD4100CD050A /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C398D289DBDA100CD050A /* MobileAccessApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */; };
+		B59D848028D5247900A1E9BD /* TunnelTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59D847F28D5247900A1E9BD /* TunnelTab.swift */; };
+		B59D848228D5369B00A1E9BD /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59D848128D5369B00A1E9BD /* TunnelViewModel.swift */; };
+		F1007637275969220022F5A9 /* MobileAccessDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1007636275969220022F5A9 /* MobileAccessDelegate.swift */; };
+		F13E821827580ECF007281EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E821727580ECF007281EF /* AppDelegate.swift */; };
+		F13E821A27580ECF007281EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E821927580ECF007281EF /* SceneDelegate.swift */; };
+		F13E821F27580ECF007281EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13E821D27580ECF007281EF /* Main.storyboard */; };
+		F13E822127580ED6007281EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E822027580ED6007281EF /* Assets.xcassets */; };
+		F13E822427580ED6007281EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13E822227580ED6007281EF /* LaunchScreen.storyboard */; };
+		F1656F7127E3D08200C29290 /* LogDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1656F7027E3D08200C29290 /* LogDelegate.swift */; };
+		F27A298928BD06E6006F1EB2 /* WebViewTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A298828BD06E6006F1EB2 /* WebViewTab.swift */; };
+		F27A298B28BD0C37006F1EB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A298A28BD0C37006F1EB2 /* Constants.swift */; };
+		F27A298D28BD0CB7006F1EB2 /* HttpClientTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A298C28BD0CB7006F1EB2 /* HttpClientTab.swift */; };
+		F27A299128BD164E006F1EB2 /* IHttpClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A299028BD164E006F1EB2 /* IHttpClientViewModel.swift */; };
+		F27A299828BD1C7A006F1EB2 /* SafeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A299728BD1C7A006F1EB2 /* SafeColor.swift */; };
+		F295426828D426A20026EAD5 /* IntuneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295426728D426A20026EAD5 /* IntuneDelegate.swift */; };
+		F295426D28D4C01D0026EAD5 /* AppConfigExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295426C28D4C01D0026EAD5 /* AppConfigExtensions.swift */; };
+		F2CB201028A2CB890031EB4A /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB200F28A2CB890031EB4A /* WebViewModel.swift */; };
+		F2CB201328A2CBB10031EB4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201228A2CBB10031EB4A /* StringExtensions.swift */; };
+		F2CB201528A2CBCA0031EB4A /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201428A2CBCA0031EB4A /* WebViewContainer.swift */; };
+		F2CB201828A2CBEC0031EB4A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201728A2CBEC0031EB4A /* NavigationBar.swift */; };
+		F2CB201A28A2CC230031EB4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201928A2CC230031EB4A /* ContentView.swift */; };
+		F2CB201C28A2CD3F0031EB4A /* HostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201B28A2CD3F0031EB4A /* HostController.swift */; };
+		F2CB204328A2D6660031EB4A /* NSUrlSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB204228A2D6660031EB4A /* NSUrlSessionViewModel.swift */; };
+		F2CCB95928AAAE9800C1925E /* CFHttpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CCB95828AAAE9800C1925E /* CFHttpViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F295430D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF79E4C4688483BAE46C6CE;
+			remoteInfo = IntuneTunnelCore;
+		};
+		F295430F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DF00D32A44541C1867842DD;
+			remoteInfo = MAPNextLink;
+		};
+		F295431128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F652D627E45C4275A6E18149;
+			remoteInfo = MAPNextPluginMicrosoft;
+		};
+		F295431328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BB120EB77654C21AADE402E;
+			remoteInfo = MAPNextPluginSecurityOpenssl;
+		};
+		F295431528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 080156D550694E458BBEC8AA;
+			remoteInfo = MAPNextPluginSwiftSupport;
+		};
+		F295431728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3FEF8EB3F1649EA9B3EA0FF;
+			remoteInfo = MAPNextPluginVpnMobileAccess;
+		};
+		F295431928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C22A0520EA8049329C683F13;
+			remoteInfo = MCPCommon;
+		};
+		F295431B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 238D19F612F14889A5AD0BC3;
+			remoteInfo = MCPCore;
+		};
+		F295431D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF54654A2FAA4890A6258EA1;
+			remoteInfo = MCPPluginUnencryptedFile;
+		};
+		F295431F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3FB95E6299604F19912AE961;
+			remoteInfo = MobileAccessApi;
+		};
+		F295432128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 013D2D92B9E34094A0A920EE;
+			remoteInfo = atlas_client;
+		};
+		F295432328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9DB66B3E64846FCA12F9F6A;
+			remoteInfo = atlas_client_perp;
+		};
+		F295432528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32B18BEFEC564347AA8A25BE;
+			remoteInfo = atlas_common;
+		};
+		F295432728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D92E6E1621204B3DA1ED8C78;
+			remoteInfo = atlas_connect;
+		};
+		F295432928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF70385A72F14E89BB186CAD;
+			remoteInfo = atlas_crypto;
+		};
+		F295432B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5D8CA6724FC426E9324F378;
+			remoteInfo = atlas_fileio;
+		};
+		F295432D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11C3179CDD554A20A2D614DF;
+			remoteInfo = atlas_keystore;
+		};
+		F295432F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD6326B132D94A55833305E1;
+			remoteInfo = atlas_plugin;
+		};
+		F295433128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9028606C9D824F4092FBB91B;
+			remoteInfo = atlas_policy;
+		};
+		F295433328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2242F7883F304721B6349D23;
+			remoteInfo = atlas_vnet;
+		};
+		F295433528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DAE9C909F044A5AB917E69F;
+			remoteInfo = crypto_bcn;
+		};
+		F295433728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEC684E3170646B4B2F41CEA;
+			remoteInfo = duktape;
+		};
+		F295433928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D04A49500DD44E08FDF1702;
+			remoteInfo = http_parser;
+		};
+		F295433B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DD57473EF4D4129AC21F058;
+			remoteInfo = ioshim;
+		};
+		F295433D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55434CD5869A4DA5BEE27463;
+			remoteInfo = libcurl;
+		};
+		F295433F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A2C76FCDBC64C4E9B588945;
+			remoteInfo = lwip;
+		};
+		F295434128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D47C2DFBDDC14EF995DE7D9C;
+			remoteInfo = mapnext_antitamper;
+		};
+		F295434328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4E7AAD72AC348F1B22D612B;
+			remoteInfo = mapnext_core;
+		};
+		F295434528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA7175D1092C4DAE90AB1DBC;
+			remoteInfo = mapnext_keystore;
+		};
+		F295434728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F7A5734D049496EA9959E51;
+			remoteInfo = mapnext_policy_rules;
+		};
+		F295434928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0FB2186E47674715A44452E0;
+			remoteInfo = mapnext_policy_source;
+		};
+		F295434B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7710E0AD5A9748C1A8D83DE8;
+			remoteInfo = mapnext_policygate;
+		};
+		F295434D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 138AB033AE1049A4A7138110;
+			remoteInfo = mapnext_webauth;
+		};
+		F295434F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2132FC3EA7304DDFB1DFAC8F;
+			remoteInfo = mcp_services;
+		};
+		F295435128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 069C6580230E477085CE43B4;
+			remoteInfo = prom_translate;
+		};
+		F295435328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C03E4E36ED174998BC2296CE;
+			remoteInfo = promclient;
+		};
+		F295435528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E1D971D9B1740CE8E278356;
+			remoteInfo = promclient_ios;
+		};
+		F295435728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CAE96AF998224985AB63280F;
+			remoteInfo = proxmetheus_common;
+		};
+		F295435928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 923F62F0B82B4B55B8AB7A29;
+			remoteInfo = proxmetheus_ios;
+		};
+		F295435B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3261A391CBC4E6091999143;
+			remoteInfo = relink;
+		};
+		F295435D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED029361D08344778373E75C;
+			remoteInfo = ssl_bcn;
+		};
+		F295435F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7C9F702041245FDBEBF06B6;
+			remoteInfo = utils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F13E8266275842FA007281EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B52C397E289DBD9900CD050A /* IntuneMAMSwift.xcframework in Embed Frameworks */,
+				B52C397F289DBD9900CD050A /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */,
+				B52C3984289DBD9900CD050A /* MAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */,
+				B52C3985289DBD9900CD050A /* MAPNextPluginSwiftSupport.xcframework in Embed Frameworks */,
+				B52C3986289DBD9900CD050A /* MAPNextPluginVpnMobileAccess.xcframework in Embed Frameworks */,
+				B52C3987289DBD9900CD050A /* MCPCommon.xcframework in Embed Frameworks */,
+				B52C3988289DBD9900CD050A /* MCPCore.xcframework in Embed Frameworks */,
+				B52C398A289DBD9900CD050A /* MCPPluginUnencryptedFile.xcframework in Embed Frameworks */,
+				B52C398B289DBD9900CD050A /* MobileAccessApi.xcframework in Embed Frameworks */,
+				B52C398C289DBD9900CD050A /* MSAL.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B52C3960289DBD4100CD050A /* MAPNextPluginSwiftSupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MAPNextPluginSwiftSupport.xcframework; path = Frameworks/MAPNextPluginSwiftSupport.xcframework; sourceTree = "<group>"; };
+		B52C3961289DBD4100CD050A /* MCPCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCPCore.xcframework; path = Frameworks/MCPCore.xcframework; sourceTree = "<group>"; };
+		B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntuneMAMSwift.xcframework; path = Frameworks/IntuneMAMSwift.xcframework; sourceTree = "<group>"; };
+		B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileAccessApi.xcframework; path = Frameworks/MobileAccessApi.xcframework; sourceTree = "<group>"; };
+		B52C3967289DBD4100CD050A /* MAPNextPluginSecurityOpenssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MAPNextPluginSecurityOpenssl.xcframework; path = Frameworks/MAPNextPluginSecurityOpenssl.xcframework; sourceTree = "<group>"; };
+		B52C3968289DBD4100CD050A /* MSAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MSAL.xcframework; path = Frameworks/MSAL.xcframework; sourceTree = "<group>"; };
+		B52C3969289DBD4100CD050A /* MAPNextPluginVpnMobileAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MAPNextPluginVpnMobileAccess.xcframework; path = Frameworks/MAPNextPluginVpnMobileAccess.xcframework; sourceTree = "<group>"; };
+		B52C396C289DBD4100CD050A /* MCPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCPCommon.xcframework; path = Frameworks/MCPCommon.xcframework; sourceTree = "<group>"; };
+		B52C396D289DBD4100CD050A /* MCPPluginUnencryptedFile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCPPluginUnencryptedFile.xcframework; path = Frameworks/MCPPluginUnencryptedFile.xcframework; sourceTree = "<group>"; };
+		B52C396E289DBD4100CD050A /* IntuneMAMSwiftStub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntuneMAMSwiftStub.xcframework; path = Frameworks/IntuneMAMSwiftStub.xcframework; sourceTree = "<group>"; };
+		B59D847F28D5247900A1E9BD /* TunnelTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelTab.swift; sourceTree = "<group>"; };
+		B59D848128D5369B00A1E9BD /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
+		F1007636275969220022F5A9 /* MobileAccessDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAccessDelegate.swift; sourceTree = "<group>"; };
+		F13E821427580ECF007281EF /* TunnelMAMTestApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TunnelMAMTestApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13E821727580ECF007281EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F13E821927580ECF007281EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F13E821E27580ECF007281EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F13E822027580ED6007281EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F13E822327580ED6007281EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F13E822527580ED6007281EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1470D1E275A9C89009A31C2 /* TunnelMAMTestApp2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TunnelMAMTestApp2.entitlements; sourceTree = "<group>"; };
+		F1656F7027E3D08200C29290 /* LogDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDelegate.swift; sourceTree = "<group>"; };
+		F27A298828BD06E6006F1EB2 /* WebViewTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTab.swift; sourceTree = "<group>"; };
+		F27A298A28BD0C37006F1EB2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F27A298C28BD0CB7006F1EB2 /* HttpClientTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTab.swift; sourceTree = "<group>"; };
+		F27A299028BD164E006F1EB2 /* IHttpClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHttpClientViewModel.swift; sourceTree = "<group>"; };
+		F27A299728BD1C7A006F1EB2 /* SafeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeColor.swift; sourceTree = "<group>"; };
+		F295426728D426A20026EAD5 /* IntuneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntuneDelegate.swift; sourceTree = "<group>"; };
+		F295426C28D4C01D0026EAD5 /* AppConfigExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigExtensions.swift; sourceTree = "<group>"; };
+		F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mapnext.xcodeproj; path = "../../projects/TunnelSDK/target/xcode-ios/mobile-access-sdk/mapnext.xcodeproj"; sourceTree = "<group>"; };
+		F2CB200F28A2CB890031EB4A /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		F2CB201228A2CBB10031EB4A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		F2CB201428A2CBCA0031EB4A /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		F2CB201728A2CBEC0031EB4A /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		F2CB201928A2CC230031EB4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F2CB201B28A2CD3F0031EB4A /* HostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostController.swift; sourceTree = "<group>"; };
+		F2CB204228A2D6660031EB4A /* NSUrlSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUrlSessionViewModel.swift; sourceTree = "<group>"; };
+		F2CCB95828AAAE9800C1925E /* CFHttpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFHttpViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F13E821127580ECF007281EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52C398D289DBDA100CD050A /* MobileAccessApi.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F13E820B27580ECF007281EF = {
+			isa = PBXGroup;
+			children = (
+				F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */,
+				F13E821627580ECF007281EF /* TunnelMAMTestApp2 */,
+				F13E826A2758442D007281EF /* Frameworks */,
+				F13E821527580ECF007281EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F13E821527580ECF007281EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F13E821427580ECF007281EF /* TunnelMAMTestApp2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F13E821627580ECF007281EF /* TunnelMAMTestApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				F27A299228BD1A21006F1EB2 /* Modifiers */,
+				F27A298728BD06C9006F1EB2 /* Views */,
+				F2CB204128A2D64A0031EB4A /* ViewModels */,
+				F2CB201628A2CBDD0031EB4A /* NavigationBar */,
+				F2CB201128A2CB9F0031EB4A /* Extensions */,
+				F2CB200E28A2CB620031EB4A /* WebView */,
+				F1470D1E275A9C89009A31C2 /* TunnelMAMTestApp2.entitlements */,
+				F13E821727580ECF007281EF /* AppDelegate.swift */,
+				F2CB201B28A2CD3F0031EB4A /* HostController.swift */,
+				F2CB201928A2CC230031EB4A /* ContentView.swift */,
+				F13E821927580ECF007281EF /* SceneDelegate.swift */,
+				F13E821D27580ECF007281EF /* Main.storyboard */,
+				F13E822027580ED6007281EF /* Assets.xcassets */,
+				F13E822227580ED6007281EF /* LaunchScreen.storyboard */,
+				F13E822527580ED6007281EF /* Info.plist */,
+				F1007636275969220022F5A9 /* MobileAccessDelegate.swift */,
+				F1656F7027E3D08200C29290 /* LogDelegate.swift */,
+				F295426728D426A20026EAD5 /* IntuneDelegate.swift */,
+				F27A298A28BD0C37006F1EB2 /* Constants.swift */,
+			);
+			path = TunnelMAMTestApp2;
+			sourceTree = "<group>";
+		};
+		F13E826A2758442D007281EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */,
+				B52C396E289DBD4100CD050A /* IntuneMAMSwiftStub.xcframework */,
+				B52C3967289DBD4100CD050A /* MAPNextPluginSecurityOpenssl.xcframework */,
+				B52C3960289DBD4100CD050A /* MAPNextPluginSwiftSupport.xcframework */,
+				B52C3969289DBD4100CD050A /* MAPNextPluginVpnMobileAccess.xcframework */,
+				B52C396C289DBD4100CD050A /* MCPCommon.xcframework */,
+				B52C3961289DBD4100CD050A /* MCPCore.xcframework */,
+				B52C396D289DBD4100CD050A /* MCPPluginUnencryptedFile.xcframework */,
+				B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */,
+				B52C3968289DBD4100CD050A /* MSAL.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F27A298728BD06C9006F1EB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F27A298828BD06E6006F1EB2 /* WebViewTab.swift */,
+				F27A298C28BD0CB7006F1EB2 /* HttpClientTab.swift */,
+				B59D847F28D5247900A1E9BD /* TunnelTab.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F27A299228BD1A21006F1EB2 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F27A299728BD1C7A006F1EB2 /* SafeColor.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		F29542B728D4DD750026EAD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F295430E28D4DD760026EAD5 /* libIntuneTunnelCore.a */,
+				F295431028D4DD760026EAD5 /* MAPNextLink.framework/MAPNextLink */,
+				F295431228D4DD760026EAD5 /* MAPNextPluginMicrosoft.framework/MAPNextPluginMicrosoft */,
+				F295431428D4DD760026EAD5 /* MAPNextPluginSecurityOpenssl.framework/MAPNextPluginSecurityOpenssl */,
+				F295431628D4DD760026EAD5 /* MAPNextPluginSwiftSupport.framework/MAPNextPluginSwiftSupport */,
+				F295431828D4DD760026EAD5 /* MAPNextPluginVpnMobileAccess.framework/MAPNextPluginVpnMobileAccess */,
+				F295431A28D4DD760026EAD5 /* MCPCommon.framework/MCPCommon */,
+				F295431C28D4DD760026EAD5 /* MCPCore.framework/MCPCore */,
+				F295431E28D4DD760026EAD5 /* MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile */,
+				F295432028D4DD760026EAD5 /* MobileAccessApi.framework/MobileAccessApi */,
+				F295432228D4DD760026EAD5 /* libatlas_client.a */,
+				F295432428D4DD760026EAD5 /* libatlas_client_perp.a */,
+				F295432628D4DD760026EAD5 /* libatlas_common.a */,
+				F295432828D4DD760026EAD5 /* libatlas_connect.a */,
+				F295432A28D4DD760026EAD5 /* libatlas_crypto.a */,
+				F295432C28D4DD760026EAD5 /* libatlas_fileio.a */,
+				F295432E28D4DD760026EAD5 /* libatlas_keystore.a */,
+				F295433028D4DD760026EAD5 /* libatlas_plugin.a */,
+				F295433228D4DD760026EAD5 /* libatlas_policy.a */,
+				F295433428D4DD760026EAD5 /* libatlas_vnet.a */,
+				F295433628D4DD760026EAD5 /* libcrypto_bcn.a */,
+				F295433828D4DD760026EAD5 /* libduktape.a */,
+				F295433A28D4DD760026EAD5 /* libhttp_parser.a */,
+				F295433C28D4DD760026EAD5 /* libioshim.a */,
+				F295433E28D4DD760026EAD5 /* libcurl.a */,
+				F295434028D4DD760026EAD5 /* liblwip.a */,
+				F295434228D4DD760026EAD5 /* libmapnext_antitamper.a */,
+				F295434428D4DD760026EAD5 /* libmapnext_core.a */,
+				F295434628D4DD760026EAD5 /* libmapnext_keystore.a */,
+				F295434828D4DD760026EAD5 /* libmapnext_policy_rules.a */,
+				F295434A28D4DD760026EAD5 /* libmapnext_policy_source.a */,
+				F295434C28D4DD760026EAD5 /* libmapnext_policygate.a */,
+				F295434E28D4DD760026EAD5 /* libmapnext_webauth.a */,
+				F295435028D4DD760026EAD5 /* libmcp_services.a */,
+				F295435228D4DD760026EAD5 /* libprom_translate.a */,
+				F295435428D4DD760026EAD5 /* libpromclient.a */,
+				F295435628D4DD760026EAD5 /* libpromclient_ios.a */,
+				F295435828D4DD760026EAD5 /* libproxmetheus_common.a */,
+				F295435A28D4DD760026EAD5 /* libproxmetheus_ios.a */,
+				F295435C28D4DD760026EAD5 /* librelink.a */,
+				F295435E28D4DD760026EAD5 /* libssl_bcn.a */,
+				F295436028D4DD760026EAD5 /* libutils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2CB200E28A2CB620031EB4A /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB201428A2CBCA0031EB4A /* WebViewContainer.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		F2CB201128A2CB9F0031EB4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB201228A2CBB10031EB4A /* StringExtensions.swift */,
+				F295426C28D4C01D0026EAD5 /* AppConfigExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2CB201628A2CBDD0031EB4A /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB201728A2CBEC0031EB4A /* NavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		F2CB204128A2D64A0031EB4A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB200F28A2CB890031EB4A /* WebViewModel.swift */,
+				F2CB204228A2D6660031EB4A /* NSUrlSessionViewModel.swift */,
+				F2CCB95828AAAE9800C1925E /* CFHttpViewModel.swift */,
+				F27A299028BD164E006F1EB2 /* IHttpClientViewModel.swift */,
+				B59D848128D5369B00A1E9BD /* TunnelViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F13E821327580ECF007281EF /* TunnelMAMTestApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F13E823E27580ED6007281EF /* Build configuration list for PBXNativeTarget "TunnelMAMTestApp2" */;
+			buildPhases = (
+				F13E821027580ECF007281EF /* Sources */,
+				F13E821127580ECF007281EF /* Frameworks */,
+				F13E821227580ECF007281EF /* Resources */,
+				F13E8266275842FA007281EF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TunnelMAMTestApp2;
+			productName = TunnelMAMTestApp2;
+			productReference = F13E821427580ECF007281EF /* TunnelMAMTestApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F13E820C27580ECF007281EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F13E821327580ECF007281EF = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = F13E820F27580ECF007281EF /* Build configuration list for PBXProject "TunnelMAMTestApp2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F13E820B27580ECF007281EF;
+			productRefGroup = F13E821527580ECF007281EF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F29542B728D4DD750026EAD5 /* Products */;
+					ProjectRef = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F13E821327580ECF007281EF /* TunnelMAMTestApp2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F295430E28D4DD760026EAD5 /* libIntuneTunnelCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIntuneTunnelCore.a;
+			remoteRef = F295430D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431028D4DD760026EAD5 /* MAPNextLink.framework/MAPNextLink */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MAPNextLink.framework/MAPNextLink;
+			path = MAPNextLink.framework;
+			remoteRef = F295430F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431228D4DD760026EAD5 /* MAPNextPluginMicrosoft.framework/MAPNextPluginMicrosoft */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MAPNextPluginMicrosoft.framework/MAPNextPluginMicrosoft;
+			path = MAPNextPluginMicrosoft.framework;
+			remoteRef = F295431128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431428D4DD760026EAD5 /* MAPNextPluginSecurityOpenssl.framework/MAPNextPluginSecurityOpenssl */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MAPNextPluginSecurityOpenssl.framework/MAPNextPluginSecurityOpenssl;
+			path = MAPNextPluginSecurityOpenssl.framework;
+			remoteRef = F295431328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431628D4DD760026EAD5 /* MAPNextPluginSwiftSupport.framework/MAPNextPluginSwiftSupport */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MAPNextPluginSwiftSupport.framework/MAPNextPluginSwiftSupport;
+			path = MAPNextPluginSwiftSupport.framework;
+			remoteRef = F295431528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431828D4DD760026EAD5 /* MAPNextPluginVpnMobileAccess.framework/MAPNextPluginVpnMobileAccess */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MAPNextPluginVpnMobileAccess.framework/MAPNextPluginVpnMobileAccess;
+			path = MAPNextPluginVpnMobileAccess.framework;
+			remoteRef = F295431728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431A28D4DD760026EAD5 /* MCPCommon.framework/MCPCommon */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MCPCommon.framework/MCPCommon;
+			path = MCPCommon.framework;
+			remoteRef = F295431928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431C28D4DD760026EAD5 /* MCPCore.framework/MCPCore */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MCPCore.framework/MCPCore;
+			path = MCPCore.framework;
+			remoteRef = F295431B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295431E28D4DD760026EAD5 /* MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile;
+			path = MCPPluginUnencryptedFile.framework;
+			remoteRef = F295431D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432028D4DD760026EAD5 /* MobileAccessApi.framework/MobileAccessApi */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MobileAccessApi.framework/MobileAccessApi;
+			path = MobileAccessApi.framework;
+			remoteRef = F295431F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432228D4DD760026EAD5 /* libatlas_client.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_client.a;
+			remoteRef = F295432128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432428D4DD760026EAD5 /* libatlas_client_perp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_client_perp.a;
+			remoteRef = F295432328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432628D4DD760026EAD5 /* libatlas_common.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_common.a;
+			remoteRef = F295432528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432828D4DD760026EAD5 /* libatlas_connect.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_connect.a;
+			remoteRef = F295432728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432A28D4DD760026EAD5 /* libatlas_crypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_crypto.a;
+			remoteRef = F295432928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432C28D4DD760026EAD5 /* libatlas_fileio.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_fileio.a;
+			remoteRef = F295432B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295432E28D4DD760026EAD5 /* libatlas_keystore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_keystore.a;
+			remoteRef = F295432D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433028D4DD760026EAD5 /* libatlas_plugin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_plugin.a;
+			remoteRef = F295432F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433228D4DD760026EAD5 /* libatlas_policy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_policy.a;
+			remoteRef = F295433128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433428D4DD760026EAD5 /* libatlas_vnet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libatlas_vnet.a;
+			remoteRef = F295433328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433628D4DD760026EAD5 /* libcrypto_bcn.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto_bcn.a;
+			remoteRef = F295433528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433828D4DD760026EAD5 /* libduktape.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libduktape.a;
+			remoteRef = F295433728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433A28D4DD760026EAD5 /* libhttp_parser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libhttp_parser.a;
+			remoteRef = F295433928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433C28D4DD760026EAD5 /* libioshim.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libioshim.a;
+			remoteRef = F295433B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295433E28D4DD760026EAD5 /* libcurl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcurl.a;
+			remoteRef = F295433D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434028D4DD760026EAD5 /* liblwip.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblwip.a;
+			remoteRef = F295433F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434228D4DD760026EAD5 /* libmapnext_antitamper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_antitamper.a;
+			remoteRef = F295434128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434428D4DD760026EAD5 /* libmapnext_core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_core.a;
+			remoteRef = F295434328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434628D4DD760026EAD5 /* libmapnext_keystore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_keystore.a;
+			remoteRef = F295434528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434828D4DD760026EAD5 /* libmapnext_policy_rules.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_policy_rules.a;
+			remoteRef = F295434728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434A28D4DD760026EAD5 /* libmapnext_policy_source.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_policy_source.a;
+			remoteRef = F295434928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434C28D4DD760026EAD5 /* libmapnext_policygate.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_policygate.a;
+			remoteRef = F295434B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295434E28D4DD760026EAD5 /* libmapnext_webauth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmapnext_webauth.a;
+			remoteRef = F295434D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435028D4DD760026EAD5 /* libmcp_services.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmcp_services.a;
+			remoteRef = F295434F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435228D4DD760026EAD5 /* libprom_translate.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprom_translate.a;
+			remoteRef = F295435128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435428D4DD760026EAD5 /* libpromclient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpromclient.a;
+			remoteRef = F295435328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435628D4DD760026EAD5 /* libpromclient_ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpromclient_ios.a;
+			remoteRef = F295435528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435828D4DD760026EAD5 /* libproxmetheus_common.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libproxmetheus_common.a;
+			remoteRef = F295435728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435A28D4DD760026EAD5 /* libproxmetheus_ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libproxmetheus_ios.a;
+			remoteRef = F295435928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435C28D4DD760026EAD5 /* librelink.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = librelink.a;
+			remoteRef = F295435B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295435E28D4DD760026EAD5 /* libssl_bcn.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libssl_bcn.a;
+			remoteRef = F295435D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F295436028D4DD760026EAD5 /* libutils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libutils.a;
+			remoteRef = F295435F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F13E821227580ECF007281EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13E822427580ED6007281EF /* LaunchScreen.storyboard in Resources */,
+				F13E822127580ED6007281EF /* Assets.xcassets in Resources */,
+				F13E821F27580ECF007281EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F13E821027580ECF007281EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CB201028A2CB890031EB4A /* WebViewModel.swift in Sources */,
+				F2CCB95928AAAE9800C1925E /* CFHttpViewModel.swift in Sources */,
+				F27A298D28BD0CB7006F1EB2 /* HttpClientTab.swift in Sources */,
+				F13E821827580ECF007281EF /* AppDelegate.swift in Sources */,
+				F2CB201C28A2CD3F0031EB4A /* HostController.swift in Sources */,
+				F2CB201328A2CBB10031EB4A /* StringExtensions.swift in Sources */,
+				F27A298928BD06E6006F1EB2 /* WebViewTab.swift in Sources */,
+				F295426828D426A20026EAD5 /* IntuneDelegate.swift in Sources */,
+				F1007637275969220022F5A9 /* MobileAccessDelegate.swift in Sources */,
+				F27A299828BD1C7A006F1EB2 /* SafeColor.swift in Sources */,
+				B59D848228D5369B00A1E9BD /* TunnelViewModel.swift in Sources */,
+				F2CB204328A2D6660031EB4A /* NSUrlSessionViewModel.swift in Sources */,
+				F2CB201828A2CBEC0031EB4A /* NavigationBar.swift in Sources */,
+				F2CB201A28A2CC230031EB4A /* ContentView.swift in Sources */,
+				F295426D28D4C01D0026EAD5 /* AppConfigExtensions.swift in Sources */,
+				F2CB201528A2CBCA0031EB4A /* WebViewContainer.swift in Sources */,
+				F27A299128BD164E006F1EB2 /* IHttpClientViewModel.swift in Sources */,
+				F27A298B28BD0C37006F1EB2 /* Constants.swift in Sources */,
+				F1656F7127E3D08200C29290 /* LogDelegate.swift in Sources */,
+				F13E821A27580ECF007281EF /* SceneDelegate.swift in Sources */,
+				B59D848028D5247900A1E9BD /* TunnelTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F13E821D27580ECF007281EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F13E821E27580ECF007281EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F13E822227580ED6007281EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F13E822327580ED6007281EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F13E823C27580ED6007281EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F13E823D27580ED6007281EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F13E823F27580ED6007281EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TunnelMAMTestApp2/TunnelMAMTestApp2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TunnelMAMTestApp2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TunnelMAMTestApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F13E824027580ED6007281EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TunnelMAMTestApp2/TunnelMAMTestApp2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TunnelMAMTestApp2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TunnelMAMTestApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F13E820F27580ECF007281EF /* Build configuration list for PBXProject "TunnelMAMTestApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F13E823C27580ED6007281EF /* Debug */,
+				F13E823D27580ED6007281EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F13E823E27580ED6007281EF /* Build configuration list for PBXNativeTarget "TunnelMAMTestApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F13E823F27580ED6007281EF /* Debug */,
+				F13E824027580ED6007281EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F13E820C27580ECF007281EF /* Project object */;
+}
