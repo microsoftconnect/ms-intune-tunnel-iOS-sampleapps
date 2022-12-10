@@ -1,0 +1,17 @@
+# iOS unimportant directories and files
+.DS_Store
+ios/**/build/**
+**/xcuserdata/**
+*.xccheckout
+
+# Misc unimportant files
+*~
+
+*.keystore
+
+# build files from samples
+**/**/build/**
+
+# ignore framework files in sample apps
+**/*/Frameworks/*
+**/*/XCFrameworks/*
