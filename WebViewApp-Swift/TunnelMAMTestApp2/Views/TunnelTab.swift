@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import MobileAccessApi
+import MicrosoftTunnelApi
 
 struct TunnelTab: View {
     
@@ -16,10 +16,10 @@ struct TunnelTab: View {
         VStack{
             Text("Tunnel Status: \(viewModel.status)")
             Spacer()
-            if MobileAccessDelegate.sharedDelegate.getStatusString() == "Connected" {
+            if MicrosoftTunnelDelegate.sharedDelegate.getStatusString() == "Connected" {
                 HStack(alignment: .center, spacing: 5) {
                     Button(action: {
-                        MobileAccessDelegate.sharedDelegate.disconnect()
+                        MicrosoftTunnelDelegate.sharedDelegate.disconnect()
                         viewModel.getStatus()
                     }) {
                         Label("Disconnect", systemImage: "lock")
@@ -32,7 +32,7 @@ struct TunnelTab: View {
             } else {
                 HStack(alignment: .center, spacing: 5) {
                     Button(action: {
-                        MobileAccessDelegate.sharedDelegate.connect()
+                        MicrosoftTunnelDelegate.sharedDelegate.connect()
                         viewModel.getStatus()
                     }) {
                         Label("Connect", systemImage: "lock")

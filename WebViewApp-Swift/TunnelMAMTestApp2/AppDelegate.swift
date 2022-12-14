@@ -9,8 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        IntuneDelegate.sharedDelegate.launchEnrollment()
+        MicrosoftTunnelDelegate.sharedDelegate.launch()
         return true
     }
 
@@ -29,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return IntuneDelegate.handleMSALResponse(response: url, sourceApplication: options[.sourceApplication] as? String)
+        return MicrosoftTunnelDelegate.sharedDelegate.api?.handleMSALResponse(url, sourceApplication: options[.sourceApplication] as? String) ?? false
     }
 }
 

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import MobileAccessApi
+import MicrosoftTunnelApi
 
 class TunnelViewModel: ObservableObject, ConnectionListener {
     func onConnected() {
@@ -29,13 +29,13 @@ class TunnelViewModel: ObservableObject, ConnectionListener {
         getStatus()
     }
     
-    @Published var status: String = MobileAccessDelegate.sharedDelegate.getStatusString()
+    @Published var status: String = MicrosoftTunnelDelegate.sharedDelegate.getStatusString()
     
     init(){
-        MobileAccessDelegate.sharedDelegate.registerConnectionListener(delegate: self)
+        MicrosoftTunnelDelegate.sharedDelegate.registerConnectionListener(delegate: self)
     }
     
     func getStatus(){
-        status = MobileAccessDelegate.sharedDelegate.getStatusString()
+        status = MicrosoftTunnelDelegate.sharedDelegate.getStatusString()
     }
 }

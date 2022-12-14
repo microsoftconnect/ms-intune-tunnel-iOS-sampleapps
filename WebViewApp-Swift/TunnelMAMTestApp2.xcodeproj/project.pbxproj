@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		B52C397E289DBD9900CD050A /* IntuneMAMSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52C397F289DBD9900CD050A /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C396E289DBD4100CD050A /* IntuneMAMSwiftStub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52C3984289DBD9900CD050A /* MAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3967289DBD4100CD050A /* MAPNextPluginSecurityOpenssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52C3985289DBD9900CD050A /* MAPNextPluginSwiftSupport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3960289DBD4100CD050A /* MAPNextPluginSwiftSupport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52C3986289DBD9900CD050A /* MAPNextPluginVpnMobileAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3969289DBD4100CD050A /* MAPNextPluginVpnMobileAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3984289DBD9900CD050A /* MSTAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3967289DBD4100CD050A /* MSTAPNextPluginSecurityOpenssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3985289DBD9900CD050A /* MSTAPNextPluginSwiftSupport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3960289DBD4100CD050A /* MSTAPNextPluginSwiftSupport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C3986289DBD9900CD050A /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3969289DBD4100CD050A /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52C3987289DBD9900CD050A /* MCPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C396C289DBD4100CD050A /* MCPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52C3988289DBD9900CD050A /* MCPCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3961289DBD4100CD050A /* MCPCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52C398A289DBD9900CD050A /* MCPPluginUnencryptedFile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C396D289DBD4100CD050A /* MCPPluginUnencryptedFile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52C398B289DBD9900CD050A /* MobileAccessApi.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B52C398B289DBD9900CD050A /* MicrosoftTunnelApi.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3965289DBD4100CD050A /* MicrosoftTunnelApi.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B52C398C289DBD9900CD050A /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3968289DBD4100CD050A /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52C398D289DBDA100CD050A /* MobileAccessApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */; };
+		B52C398D289DBDA100CD050A /* MicrosoftTunnelApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3965289DBD4100CD050A /* MicrosoftTunnelApi.xcframework */; };
+		B5513C67293A7B5C00DD30D4 /* crypto.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5513C64293A7B5000DD30D4 /* crypto.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5513C68293A7B5C00DD30D4 /* ssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5513C63293A7B5000DD30D4 /* ssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B59D848028D5247900A1E9BD /* TunnelTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59D847F28D5247900A1E9BD /* TunnelTab.swift */; };
 		B59D848228D5369B00A1E9BD /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59D848128D5369B00A1E9BD /* TunnelViewModel.swift */; };
-		F1007637275969220022F5A9 /* MobileAccessDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1007636275969220022F5A9 /* MobileAccessDelegate.swift */; };
+		F1007637275969220022F5A9 /* MicrosoftTunnelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1007636275969220022F5A9 /* MicrosoftTunnelDelegate.swift */; };
 		F13E821827580ECF007281EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E821727580ECF007281EF /* AppDelegate.swift */; };
 		F13E821A27580ECF007281EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E821927580ECF007281EF /* SceneDelegate.swift */; };
 		F13E821F27580ECF007281EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13E821D27580ECF007281EF /* Main.storyboard */; };
@@ -32,8 +34,9 @@
 		F27A298D28BD0CB7006F1EB2 /* HttpClientTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A298C28BD0CB7006F1EB2 /* HttpClientTab.swift */; };
 		F27A299128BD164E006F1EB2 /* IHttpClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A299028BD164E006F1EB2 /* IHttpClientViewModel.swift */; };
 		F27A299828BD1C7A006F1EB2 /* SafeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A299728BD1C7A006F1EB2 /* SafeColor.swift */; };
-		F295426828D426A20026EAD5 /* IntuneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295426728D426A20026EAD5 /* IntuneDelegate.swift */; };
 		F295426D28D4C01D0026EAD5 /* AppConfigExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295426C28D4C01D0026EAD5 /* AppConfigExtensions.swift */; };
+		F29AF28D2902FBC8002C5FCE /* MSAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3968289DBD4100CD050A /* MSAL.xcframework */; };
+		F29AF28E2902FBCC002C5FCE /* IntuneMAMSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */; };
 		F2CB201028A2CB890031EB4A /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB200F28A2CB890031EB4A /* WebViewModel.swift */; };
 		F2CB201328A2CBB10031EB4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201228A2CBB10031EB4A /* StringExtensions.swift */; };
 		F2CB201528A2CBCA0031EB4A /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB201428A2CBCA0031EB4A /* WebViewContainer.swift */; };
@@ -45,298 +48,291 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F295430D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F268B47129085B7A00E19FA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 0CF79E4C4688483BAE46C6CE;
+			remoteGlobalIDString = 79C3D62AB79A47268867082F;
+			remoteInfo = MSTAPNextPluginSecurityOpensslFIPS;
+		};
+		F277FC5C28F75D870044E8A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BFBD1FB85894471847DA8B7;
 			remoteInfo = IntuneTunnelCore;
 		};
-		F295430F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC5E28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6DF00D32A44541C1867842DD;
-			remoteInfo = MAPNextLink;
+			remoteGlobalIDString = 6992316F2A614733B0B0BFA1;
+			remoteInfo = MSTAPNextLink;
 		};
-		F295431128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6028F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F652D627E45C4275A6E18149;
-			remoteInfo = MAPNextPluginMicrosoft;
+			remoteGlobalIDString = 34DF81A706CB46B191AD21C2;
+			remoteInfo = MSTAPNextPluginMicrosoft;
 		};
-		F295431328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6228F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8BB120EB77654C21AADE402E;
-			remoteInfo = MAPNextPluginSecurityOpenssl;
+			remoteGlobalIDString = 99CA97116C2B4321B92397B3;
+			remoteInfo = MSTAPNextPluginSecurityOpenssl;
 		};
-		F295431528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6428F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 080156D550694E458BBEC8AA;
-			remoteInfo = MAPNextPluginSwiftSupport;
+			remoteGlobalIDString = C8FE3CD1959047CE9B3BA239;
+			remoteInfo = MSTAPNextPluginSwiftSupport;
 		};
-		F295431728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6628F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B3FEF8EB3F1649EA9B3EA0FF;
-			remoteInfo = MAPNextPluginVpnMobileAccess;
+			remoteGlobalIDString = 62B1DED3D3C54BD8A64A7542;
+			remoteInfo = MSTAPNextPluginVpnMicrosoftTunnel;
 		};
-		F295431928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6828F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C22A0520EA8049329C683F13;
+			remoteGlobalIDString = 6997505645ED45FA84BAABFB;
 			remoteInfo = MCPCommon;
 		};
-		F295431B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6A28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 238D19F612F14889A5AD0BC3;
+			remoteGlobalIDString = ED6D39613BBE406CB40808B9;
 			remoteInfo = MCPCore;
 		};
-		F295431D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6C28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BF54654A2FAA4890A6258EA1;
+			remoteGlobalIDString = 194089AB6BCD48AB946A6E03;
 			remoteInfo = MCPPluginUnencryptedFile;
 		};
-		F295431F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC6E28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 3FB95E6299604F19912AE961;
-			remoteInfo = MobileAccessApi;
+			remoteGlobalIDString = 30DE1FEB2D144AA7B95A4A96;
+			remoteInfo = MicrosoftTunnelApi;
 		};
-		F295432128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7028F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 013D2D92B9E34094A0A920EE;
+			remoteGlobalIDString = 5F28A558BE214B9AB826CBA9;
 			remoteInfo = atlas_client;
 		};
-		F295432328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7228F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B9DB66B3E64846FCA12F9F6A;
+			remoteGlobalIDString = 2D618E483BC64E148A006FF2;
 			remoteInfo = atlas_client_perp;
 		};
-		F295432528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7428F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 32B18BEFEC564347AA8A25BE;
+			remoteGlobalIDString = 72503553186F4D15A146B33C;
 			remoteInfo = atlas_common;
 		};
-		F295432728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7628F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D92E6E1621204B3DA1ED8C78;
+			remoteGlobalIDString = 8595A7A2E3D94650B408911F;
 			remoteInfo = atlas_connect;
 		};
-		F295432928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7828F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BF70385A72F14E89BB186CAD;
+			remoteGlobalIDString = 30E7F45F812B4B47B82B10B5;
 			remoteInfo = atlas_crypto;
 		};
-		F295432B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7A28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = E5D8CA6724FC426E9324F378;
+			remoteGlobalIDString = 153BAB0D954D463A85B6FA3B;
 			remoteInfo = atlas_fileio;
 		};
-		F295432D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7C28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 11C3179CDD554A20A2D614DF;
+			remoteGlobalIDString = 0B919CD14045458E856C8C98;
 			remoteInfo = atlas_keystore;
 		};
-		F295432F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC7E28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = CD6326B132D94A55833305E1;
+			remoteGlobalIDString = D62EF126A3DD4F289067288F;
 			remoteInfo = atlas_plugin;
 		};
-		F295433128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8028F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9028606C9D824F4092FBB91B;
+			remoteGlobalIDString = CEC36B059D6B40698D445588;
 			remoteInfo = atlas_policy;
 		};
-		F295433328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8228F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 2242F7883F304721B6349D23;
+			remoteGlobalIDString = 3742A594097B456792E55C0D;
 			remoteInfo = atlas_vnet;
 		};
-		F295433528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8628F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8DAE9C909F044A5AB917E69F;
-			remoteInfo = crypto_bcn;
-		};
-		F295433728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DEC684E3170646B4B2F41CEA;
+			remoteGlobalIDString = 0246745D466E4813ACF24CDE;
 			remoteInfo = duktape;
 		};
-		F295433928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8828F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 3D04A49500DD44E08FDF1702;
+			remoteGlobalIDString = 80F9AF44E5DB47ECADE5AD7F;
 			remoteInfo = http_parser;
 		};
-		F295433B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8A28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9DD57473EF4D4129AC21F058;
+			remoteGlobalIDString = F2A1FD0BECE9468CA0E398D6;
 			remoteInfo = ioshim;
 		};
-		F295433D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8C28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 55434CD5869A4DA5BEE27463;
+			remoteGlobalIDString = 20D4FF6137EA400ABB17A3CE;
 			remoteInfo = libcurl;
 		};
-		F295433F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC8E28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 4A2C76FCDBC64C4E9B588945;
+			remoteGlobalIDString = 849B794076574582B38D24C8;
 			remoteInfo = lwip;
 		};
-		F295434128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9028F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D47C2DFBDDC14EF995DE7D9C;
-			remoteInfo = mapnext_antitamper;
+			remoteGlobalIDString = 8860079B47FA45EDA65AF569;
+			remoteInfo = mstapnext_antitamper;
 		};
-		F295434328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9228F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F4E7AAD72AC348F1B22D612B;
-			remoteInfo = mapnext_core;
+			remoteGlobalIDString = 318BB8556810422AA9E94471;
+			remoteInfo = mstapnext_core;
 		};
-		F295434528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9428F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BA7175D1092C4DAE90AB1DBC;
-			remoteInfo = mapnext_keystore;
+			remoteGlobalIDString = 5651124154C94EBCA3C1B9AC;
+			remoteInfo = mstapnext_keystore;
 		};
-		F295434728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9628F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8F7A5734D049496EA9959E51;
-			remoteInfo = mapnext_policy_rules;
+			remoteGlobalIDString = E69505BA1F5F42F18AEF6517;
+			remoteInfo = mstapnext_policy_rules;
 		};
-		F295434928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9828F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 0FB2186E47674715A44452E0;
-			remoteInfo = mapnext_policy_source;
+			remoteGlobalIDString = 8CCFDD9C3AE74137B281BC92;
+			remoteInfo = mstapnext_policy_source;
 		};
-		F295434B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9A28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 7710E0AD5A9748C1A8D83DE8;
-			remoteInfo = mapnext_policygate;
+			remoteGlobalIDString = 2CAA584FDA3C43F897C3562B;
+			remoteInfo = mstapnext_policygate;
 		};
-		F295434D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9C28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 138AB033AE1049A4A7138110;
-			remoteInfo = mapnext_webauth;
+			remoteGlobalIDString = 5E2F542251E348B7876403E3;
+			remoteInfo = mstapnext_webauth;
 		};
-		F295434F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FC9E28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 2132FC3EA7304DDFB1DFAC8F;
+			remoteGlobalIDString = 4D93F8C6CB184AC08310F8FC;
 			remoteInfo = mcp_services;
 		};
-		F295435128D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCA028F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 069C6580230E477085CE43B4;
+			remoteGlobalIDString = 1FFABD93AAD94E7F80E81DED;
 			remoteInfo = prom_translate;
 		};
-		F295435328D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCA228F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C03E4E36ED174998BC2296CE;
+			remoteGlobalIDString = 1111898F29B945F0BFF518F9;
 			remoteInfo = promclient;
 		};
-		F295435528D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCA428F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 4E1D971D9B1740CE8E278356;
+			remoteGlobalIDString = 990CEDED2F094C9792D5706D;
 			remoteInfo = promclient_ios;
 		};
-		F295435728D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCA628F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = CAE96AF998224985AB63280F;
+			remoteGlobalIDString = EABF4D5E3CE14D24B4A2DDD4;
 			remoteInfo = proxmetheus_common;
 		};
-		F295435928D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCA828F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 923F62F0B82B4B55B8AB7A29;
+			remoteGlobalIDString = 0A6B66F14AF348009ADF233B;
 			remoteInfo = proxmetheus_ios;
 		};
-		F295435B28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCAA28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C3261A391CBC4E6091999143;
+			remoteGlobalIDString = 9803BBC1B9EE4FEA8B63EF1D;
 			remoteInfo = relink;
 		};
-		F295435D28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
+		F277FCAE28F75D870044E8A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+			containerPortal = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = ED029361D08344778373E75C;
-			remoteInfo = ssl_bcn;
-		};
-		F295435F28D4DD760026EAD5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F7C9F702041245FDBEBF06B6;
+			remoteGlobalIDString = EF26BCDB6C944B0C942C2B1B;
 			remoteInfo = utils;
 		};
 /* End PBXContainerItemProxy section */
@@ -348,15 +344,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B5513C67293A7B5C00DD30D4 /* crypto.xcframework in Embed Frameworks */,
+				B5513C68293A7B5C00DD30D4 /* ssl.xcframework in Embed Frameworks */,
 				B52C397E289DBD9900CD050A /* IntuneMAMSwift.xcframework in Embed Frameworks */,
 				B52C397F289DBD9900CD050A /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */,
-				B52C3984289DBD9900CD050A /* MAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */,
-				B52C3985289DBD9900CD050A /* MAPNextPluginSwiftSupport.xcframework in Embed Frameworks */,
-				B52C3986289DBD9900CD050A /* MAPNextPluginVpnMobileAccess.xcframework in Embed Frameworks */,
+				B52C3984289DBD9900CD050A /* MSTAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */,
+				B52C3985289DBD9900CD050A /* MSTAPNextPluginSwiftSupport.xcframework in Embed Frameworks */,
+				B52C3986289DBD9900CD050A /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework in Embed Frameworks */,
 				B52C3987289DBD9900CD050A /* MCPCommon.xcframework in Embed Frameworks */,
 				B52C3988289DBD9900CD050A /* MCPCore.xcframework in Embed Frameworks */,
 				B52C398A289DBD9900CD050A /* MCPPluginUnencryptedFile.xcframework in Embed Frameworks */,
-				B52C398B289DBD9900CD050A /* MobileAccessApi.xcframework in Embed Frameworks */,
+				B52C398B289DBD9900CD050A /* MicrosoftTunnelApi.xcframework in Embed Frameworks */,
 				B52C398C289DBD9900CD050A /* MSAL.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -365,19 +363,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B52C3960289DBD4100CD050A /* MAPNextPluginSwiftSupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MAPNextPluginSwiftSupport.xcframework; path = Frameworks/MAPNextPluginSwiftSupport.xcframework; sourceTree = "<group>"; };
+		B52C3960289DBD4100CD050A /* MSTAPNextPluginSwiftSupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MSTAPNextPluginSwiftSupport.xcframework; path = Frameworks/MSTAPNextPluginSwiftSupport.xcframework; sourceTree = "<group>"; };
 		B52C3961289DBD4100CD050A /* MCPCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCPCore.xcframework; path = Frameworks/MCPCore.xcframework; sourceTree = "<group>"; };
 		B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntuneMAMSwift.xcframework; path = Frameworks/IntuneMAMSwift.xcframework; sourceTree = "<group>"; };
-		B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileAccessApi.xcframework; path = Frameworks/MobileAccessApi.xcframework; sourceTree = "<group>"; };
-		B52C3967289DBD4100CD050A /* MAPNextPluginSecurityOpenssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MAPNextPluginSecurityOpenssl.xcframework; path = Frameworks/MAPNextPluginSecurityOpenssl.xcframework; sourceTree = "<group>"; };
+		B52C3965289DBD4100CD050A /* MicrosoftTunnelApi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MicrosoftTunnelApi.xcframework; path = Frameworks/MicrosoftTunnelApi.xcframework; sourceTree = "<group>"; };
+		B52C3967289DBD4100CD050A /* MSTAPNextPluginSecurityOpenssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MSTAPNextPluginSecurityOpenssl.xcframework; path = Frameworks/MSTAPNextPluginSecurityOpenssl.xcframework; sourceTree = "<group>"; };
 		B52C3968289DBD4100CD050A /* MSAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MSAL.xcframework; path = Frameworks/MSAL.xcframework; sourceTree = "<group>"; };
-		B52C3969289DBD4100CD050A /* MAPNextPluginVpnMobileAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MAPNextPluginVpnMobileAccess.xcframework; path = Frameworks/MAPNextPluginVpnMobileAccess.xcframework; sourceTree = "<group>"; };
+		B52C3969289DBD4100CD050A /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MSTAPNextPluginVpnMicrosoftTunnel.xcframework; path = Frameworks/MSTAPNextPluginVpnMicrosoftTunnel.xcframework; sourceTree = "<group>"; };
 		B52C396C289DBD4100CD050A /* MCPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCPCommon.xcframework; path = Frameworks/MCPCommon.xcframework; sourceTree = "<group>"; };
 		B52C396D289DBD4100CD050A /* MCPPluginUnencryptedFile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MCPPluginUnencryptedFile.xcframework; path = Frameworks/MCPPluginUnencryptedFile.xcframework; sourceTree = "<group>"; };
 		B52C396E289DBD4100CD050A /* IntuneMAMSwiftStub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntuneMAMSwiftStub.xcframework; path = Frameworks/IntuneMAMSwiftStub.xcframework; sourceTree = "<group>"; };
+		B5513C63293A7B5000DD30D4 /* ssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ssl.xcframework; path = Frameworks/ssl.xcframework; sourceTree = "<group>"; };
+		B5513C64293A7B5000DD30D4 /* crypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = crypto.xcframework; path = Frameworks/crypto.xcframework; sourceTree = "<group>"; };
+		B571B5E1292C466600F061EF /* fips.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = fips.xcframework; path = Frameworks/fips.xcframework; sourceTree = "<group>"; };
 		B59D847F28D5247900A1E9BD /* TunnelTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelTab.swift; sourceTree = "<group>"; };
 		B59D848128D5369B00A1E9BD /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
-		F1007636275969220022F5A9 /* MobileAccessDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAccessDelegate.swift; sourceTree = "<group>"; };
+		F1007636275969220022F5A9 /* MicrosoftTunnelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftTunnelDelegate.swift; sourceTree = "<group>"; };
 		F13E821427580ECF007281EF /* TunnelMAMTestApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TunnelMAMTestApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13E821727580ECF007281EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F13E821927580ECF007281EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -387,14 +388,13 @@
 		F13E822527580ED6007281EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1470D1E275A9C89009A31C2 /* TunnelMAMTestApp2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TunnelMAMTestApp2.entitlements; sourceTree = "<group>"; };
 		F1656F7027E3D08200C29290 /* LogDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDelegate.swift; sourceTree = "<group>"; };
+		F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mstapnext.xcodeproj; path = "../../projects/TunnelSDK/target/xcode-ios/microsoft-tunnel-sdk/mstapnext.xcodeproj"; sourceTree = "<group>"; };
 		F27A298828BD06E6006F1EB2 /* WebViewTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTab.swift; sourceTree = "<group>"; };
 		F27A298A28BD0C37006F1EB2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F27A298C28BD0CB7006F1EB2 /* HttpClientTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTab.swift; sourceTree = "<group>"; };
 		F27A299028BD164E006F1EB2 /* IHttpClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHttpClientViewModel.swift; sourceTree = "<group>"; };
 		F27A299728BD1C7A006F1EB2 /* SafeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeColor.swift; sourceTree = "<group>"; };
-		F295426728D426A20026EAD5 /* IntuneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntuneDelegate.swift; sourceTree = "<group>"; };
 		F295426C28D4C01D0026EAD5 /* AppConfigExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigExtensions.swift; sourceTree = "<group>"; };
-		F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mapnext.xcodeproj; path = "../../projects/TunnelSDK/target/xcode-ios/mobile-access-sdk/mapnext.xcodeproj"; sourceTree = "<group>"; };
 		F2CB200F28A2CB890031EB4A /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		F2CB201228A2CBB10031EB4A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F2CB201428A2CBCA0031EB4A /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
@@ -410,7 +410,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52C398D289DBDA100CD050A /* MobileAccessApi.xcframework in Frameworks */,
+				F29AF28E2902FBCC002C5FCE /* IntuneMAMSwift.xcframework in Frameworks */,
+				F29AF28D2902FBC8002C5FCE /* MSAL.xcframework in Frameworks */,
+				B52C398D289DBDA100CD050A /* MicrosoftTunnelApi.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +422,7 @@
 		F13E820B27580ECF007281EF = {
 			isa = PBXGroup;
 			children = (
-				F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */,
+				F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */,
 				F13E821627580ECF007281EF /* TunnelMAMTestApp2 */,
 				F13E826A2758442D007281EF /* Frameworks */,
 				F13E821527580ECF007281EF /* Products */,
@@ -453,9 +455,8 @@
 				F13E822027580ED6007281EF /* Assets.xcassets */,
 				F13E822227580ED6007281EF /* LaunchScreen.storyboard */,
 				F13E822527580ED6007281EF /* Info.plist */,
-				F1007636275969220022F5A9 /* MobileAccessDelegate.swift */,
+				F1007636275969220022F5A9 /* MicrosoftTunnelDelegate.swift */,
 				F1656F7027E3D08200C29290 /* LogDelegate.swift */,
-				F295426728D426A20026EAD5 /* IntuneDelegate.swift */,
 				F27A298A28BD0C37006F1EB2 /* Constants.swift */,
 			);
 			path = TunnelMAMTestApp2;
@@ -464,18 +465,69 @@
 		F13E826A2758442D007281EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5513C64293A7B5000DD30D4 /* crypto.xcframework */,
+				B5513C63293A7B5000DD30D4 /* ssl.xcframework */,
+				B571B5E1292C466600F061EF /* fips.xcframework */,
 				B52C3963289DBD4100CD050A /* IntuneMAMSwift.xcframework */,
 				B52C396E289DBD4100CD050A /* IntuneMAMSwiftStub.xcframework */,
-				B52C3967289DBD4100CD050A /* MAPNextPluginSecurityOpenssl.xcframework */,
-				B52C3960289DBD4100CD050A /* MAPNextPluginSwiftSupport.xcframework */,
-				B52C3969289DBD4100CD050A /* MAPNextPluginVpnMobileAccess.xcframework */,
+				B52C3967289DBD4100CD050A /* MSTAPNextPluginSecurityOpenssl.xcframework */,
+				B52C3960289DBD4100CD050A /* MSTAPNextPluginSwiftSupport.xcframework */,
+				B52C3969289DBD4100CD050A /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework */,
 				B52C396C289DBD4100CD050A /* MCPCommon.xcframework */,
 				B52C3961289DBD4100CD050A /* MCPCore.xcframework */,
 				B52C396D289DBD4100CD050A /* MCPPluginUnencryptedFile.xcframework */,
-				B52C3965289DBD4100CD050A /* MobileAccessApi.xcframework */,
+				B52C3965289DBD4100CD050A /* MicrosoftTunnelApi.xcframework */,
 				B52C3968289DBD4100CD050A /* MSAL.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F277FC0628F75D870044E8A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F277FC5D28F75D870044E8A5 /* libIntuneTunnelCore.a */,
+				F277FC6928F75D870044E8A5 /* MCPCommon.framework/MCPCommon */,
+				F277FC6B28F75D870044E8A5 /* MCPCore.framework/MCPCore */,
+				F277FC6D28F75D870044E8A5 /* MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile */,
+				F277FC5F28F75D870044E8A5 /* MSTAPNextLink.framework/MSTAPNextLink */,
+				F277FC6128F75D870044E8A5 /* MSTAPNextPluginMicrosoft.framework/MSTAPNextPluginMicrosoft */,
+				F277FC6328F75D870044E8A5 /* MSTAPNextPluginSecurityOpenssl.framework/MSTAPNextPluginSecurityOpenssl */,
+				F268B47229085B7A00E19FA5 /* MSTAPNextPluginSecurityOpensslFIPS.framework/MSTAPNextPluginSecurityOpensslFIPS */,
+				F277FC6528F75D870044E8A5 /* MSTAPNextPluginSwiftSupport.framework/MSTAPNextPluginSwiftSupport */,
+				F277FC6728F75D870044E8A5 /* MSTAPNextPluginVpnMicrosoftTunnel.framework/MSTAPNextPluginVpnMicrosoftTunnel */,
+				F277FC6F28F75D870044E8A5 /* MicrosoftTunnelApi.framework/MicrosoftTunnelApi */,
+				F277FC7128F75D870044E8A5 /* libatlas_client.a */,
+				F277FC7328F75D870044E8A5 /* libatlas_client_perp.a */,
+				F277FC7528F75D870044E8A5 /* libatlas_common.a */,
+				F277FC7728F75D870044E8A5 /* libatlas_connect.a */,
+				F277FC7928F75D870044E8A5 /* libatlas_crypto.a */,
+				F277FC7B28F75D870044E8A5 /* libatlas_fileio.a */,
+				F277FC7D28F75D870044E8A5 /* libatlas_keystore.a */,
+				F277FC7F28F75D870044E8A5 /* libatlas_plugin.a */,
+				F277FC8128F75D870044E8A5 /* libatlas_policy.a */,
+				F277FC8328F75D870044E8A5 /* libatlas_vnet.a */,
+				F277FC8728F75D870044E8A5 /* libduktape.a */,
+				F277FC8928F75D870044E8A5 /* libhttp_parser.a */,
+				F277FC8B28F75D870044E8A5 /* libioshim.a */,
+				F277FC8D28F75D870044E8A5 /* libcurl.a */,
+				F277FC8F28F75D870044E8A5 /* liblwip.a */,
+				F277FC9F28F75D870044E8A5 /* libmcp_services.a */,
+				F277FC9128F75D870044E8A5 /* libmstapnext_antitamper.a */,
+				F277FC9328F75D870044E8A5 /* libmstapnext_core.a */,
+				F277FC9528F75D870044E8A5 /* libmstapnext_keystore.a */,
+				F277FC9728F75D870044E8A5 /* libmstapnext_policy_rules.a */,
+				F277FC9928F75D870044E8A5 /* libmstapnext_policy_source.a */,
+				F277FC9B28F75D870044E8A5 /* libmstapnext_policygate.a */,
+				F277FC9D28F75D870044E8A5 /* libmstapnext_webauth.a */,
+				F277FCA128F75D870044E8A5 /* libprom_translate.a */,
+				F277FCA328F75D870044E8A5 /* libpromclient.a */,
+				F277FCA528F75D870044E8A5 /* libpromclient_ios.a */,
+				F277FCA728F75D870044E8A5 /* libproxmetheus_common.a */,
+				F277FCA928F75D870044E8A5 /* libproxmetheus_ios.a */,
+				F277FCAB28F75D870044E8A5 /* librelink.a */,
+				F277FCAF28F75D870044E8A5 /* libutils.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F27A298728BD06C9006F1EB2 /* Views */ = {
@@ -494,55 +546,6 @@
 				F27A299728BD1C7A006F1EB2 /* SafeColor.swift */,
 			);
 			path = Modifiers;
-			sourceTree = "<group>";
-		};
-		F29542B728D4DD750026EAD5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F295430E28D4DD760026EAD5 /* libIntuneTunnelCore.a */,
-				F295431028D4DD760026EAD5 /* MAPNextLink.framework/MAPNextLink */,
-				F295431228D4DD760026EAD5 /* MAPNextPluginMicrosoft.framework/MAPNextPluginMicrosoft */,
-				F295431428D4DD760026EAD5 /* MAPNextPluginSecurityOpenssl.framework/MAPNextPluginSecurityOpenssl */,
-				F295431628D4DD760026EAD5 /* MAPNextPluginSwiftSupport.framework/MAPNextPluginSwiftSupport */,
-				F295431828D4DD760026EAD5 /* MAPNextPluginVpnMobileAccess.framework/MAPNextPluginVpnMobileAccess */,
-				F295431A28D4DD760026EAD5 /* MCPCommon.framework/MCPCommon */,
-				F295431C28D4DD760026EAD5 /* MCPCore.framework/MCPCore */,
-				F295431E28D4DD760026EAD5 /* MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile */,
-				F295432028D4DD760026EAD5 /* MobileAccessApi.framework/MobileAccessApi */,
-				F295432228D4DD760026EAD5 /* libatlas_client.a */,
-				F295432428D4DD760026EAD5 /* libatlas_client_perp.a */,
-				F295432628D4DD760026EAD5 /* libatlas_common.a */,
-				F295432828D4DD760026EAD5 /* libatlas_connect.a */,
-				F295432A28D4DD760026EAD5 /* libatlas_crypto.a */,
-				F295432C28D4DD760026EAD5 /* libatlas_fileio.a */,
-				F295432E28D4DD760026EAD5 /* libatlas_keystore.a */,
-				F295433028D4DD760026EAD5 /* libatlas_plugin.a */,
-				F295433228D4DD760026EAD5 /* libatlas_policy.a */,
-				F295433428D4DD760026EAD5 /* libatlas_vnet.a */,
-				F295433628D4DD760026EAD5 /* libcrypto_bcn.a */,
-				F295433828D4DD760026EAD5 /* libduktape.a */,
-				F295433A28D4DD760026EAD5 /* libhttp_parser.a */,
-				F295433C28D4DD760026EAD5 /* libioshim.a */,
-				F295433E28D4DD760026EAD5 /* libcurl.a */,
-				F295434028D4DD760026EAD5 /* liblwip.a */,
-				F295434228D4DD760026EAD5 /* libmapnext_antitamper.a */,
-				F295434428D4DD760026EAD5 /* libmapnext_core.a */,
-				F295434628D4DD760026EAD5 /* libmapnext_keystore.a */,
-				F295434828D4DD760026EAD5 /* libmapnext_policy_rules.a */,
-				F295434A28D4DD760026EAD5 /* libmapnext_policy_source.a */,
-				F295434C28D4DD760026EAD5 /* libmapnext_policygate.a */,
-				F295434E28D4DD760026EAD5 /* libmapnext_webauth.a */,
-				F295435028D4DD760026EAD5 /* libmcp_services.a */,
-				F295435228D4DD760026EAD5 /* libprom_translate.a */,
-				F295435428D4DD760026EAD5 /* libpromclient.a */,
-				F295435628D4DD760026EAD5 /* libpromclient_ios.a */,
-				F295435828D4DD760026EAD5 /* libproxmetheus_common.a */,
-				F295435A28D4DD760026EAD5 /* libproxmetheus_ios.a */,
-				F295435C28D4DD760026EAD5 /* librelink.a */,
-				F295435E28D4DD760026EAD5 /* libssl_bcn.a */,
-				F295436028D4DD760026EAD5 /* libutils.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F2CB200E28A2CB620031EB4A /* WebView */ = {
@@ -632,8 +635,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F29542B728D4DD750026EAD5 /* Products */;
-					ProjectRef = F29542B628D4DD750026EAD5 /* mapnext.xcodeproj */;
+					ProductGroup = F277FC0628F75D870044E8A5 /* Products */;
+					ProjectRef = F277FC0528F75D870044E8A5 /* mstapnext.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -644,307 +647,301 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F295430E28D4DD760026EAD5 /* libIntuneTunnelCore.a */ = {
+		F268B47229085B7A00E19FA5 /* MSTAPNextPluginSecurityOpensslFIPS.framework/MSTAPNextPluginSecurityOpensslFIPS */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = MSTAPNextPluginSecurityOpensslFIPS.framework/MSTAPNextPluginSecurityOpensslFIPS;
+			path = MSTAPNextPluginSecurityOpensslFIPS.framework;
+			remoteRef = F268B47129085B7A00E19FA5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F277FC5D28F75D870044E8A5 /* libIntuneTunnelCore.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libIntuneTunnelCore.a;
-			remoteRef = F295430D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC5C28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431028D4DD760026EAD5 /* MAPNextLink.framework/MAPNextLink */ = {
+		F277FC5F28F75D870044E8A5 /* MSTAPNextLink.framework/MSTAPNextLink */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = MAPNextLink.framework/MAPNextLink;
-			path = MAPNextLink.framework;
-			remoteRef = F295430F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			name = MSTAPNextLink.framework/MSTAPNextLink;
+			path = MSTAPNextLink.framework;
+			remoteRef = F277FC5E28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431228D4DD760026EAD5 /* MAPNextPluginMicrosoft.framework/MAPNextPluginMicrosoft */ = {
+		F277FC6128F75D870044E8A5 /* MSTAPNextPluginMicrosoft.framework/MSTAPNextPluginMicrosoft */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = MAPNextPluginMicrosoft.framework/MAPNextPluginMicrosoft;
-			path = MAPNextPluginMicrosoft.framework;
-			remoteRef = F295431128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			name = MSTAPNextPluginMicrosoft.framework/MSTAPNextPluginMicrosoft;
+			path = MSTAPNextPluginMicrosoft.framework;
+			remoteRef = F277FC6028F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431428D4DD760026EAD5 /* MAPNextPluginSecurityOpenssl.framework/MAPNextPluginSecurityOpenssl */ = {
+		F277FC6328F75D870044E8A5 /* MSTAPNextPluginSecurityOpenssl.framework/MSTAPNextPluginSecurityOpenssl */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = MAPNextPluginSecurityOpenssl.framework/MAPNextPluginSecurityOpenssl;
-			path = MAPNextPluginSecurityOpenssl.framework;
-			remoteRef = F295431328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			name = MSTAPNextPluginSecurityOpenssl.framework/MSTAPNextPluginSecurityOpenssl;
+			path = MSTAPNextPluginSecurityOpenssl.framework;
+			remoteRef = F277FC6228F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431628D4DD760026EAD5 /* MAPNextPluginSwiftSupport.framework/MAPNextPluginSwiftSupport */ = {
+		F277FC6528F75D870044E8A5 /* MSTAPNextPluginSwiftSupport.framework/MSTAPNextPluginSwiftSupport */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = MAPNextPluginSwiftSupport.framework/MAPNextPluginSwiftSupport;
-			path = MAPNextPluginSwiftSupport.framework;
-			remoteRef = F295431528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			name = MSTAPNextPluginSwiftSupport.framework/MSTAPNextPluginSwiftSupport;
+			path = MSTAPNextPluginSwiftSupport.framework;
+			remoteRef = F277FC6428F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431828D4DD760026EAD5 /* MAPNextPluginVpnMobileAccess.framework/MAPNextPluginVpnMobileAccess */ = {
+		F277FC6728F75D870044E8A5 /* MSTAPNextPluginVpnMicrosoftTunnel.framework/MSTAPNextPluginVpnMicrosoftTunnel */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = MAPNextPluginVpnMobileAccess.framework/MAPNextPluginVpnMobileAccess;
-			path = MAPNextPluginVpnMobileAccess.framework;
-			remoteRef = F295431728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			name = MSTAPNextPluginVpnMicrosoftTunnel.framework/MSTAPNextPluginVpnMicrosoftTunnel;
+			path = MSTAPNextPluginVpnMicrosoftTunnel.framework;
+			remoteRef = F277FC6628F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431A28D4DD760026EAD5 /* MCPCommon.framework/MCPCommon */ = {
+		F277FC6928F75D870044E8A5 /* MCPCommon.framework/MCPCommon */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = MCPCommon.framework/MCPCommon;
 			path = MCPCommon.framework;
-			remoteRef = F295431928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC6828F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431C28D4DD760026EAD5 /* MCPCore.framework/MCPCore */ = {
+		F277FC6B28F75D870044E8A5 /* MCPCore.framework/MCPCore */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = MCPCore.framework/MCPCore;
 			path = MCPCore.framework;
-			remoteRef = F295431B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC6A28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295431E28D4DD760026EAD5 /* MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile */ = {
+		F277FC6D28F75D870044E8A5 /* MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile;
 			path = MCPPluginUnencryptedFile.framework;
-			remoteRef = F295431D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC6C28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432028D4DD760026EAD5 /* MobileAccessApi.framework/MobileAccessApi */ = {
+		F277FC6F28F75D870044E8A5 /* MicrosoftTunnelApi.framework/MicrosoftTunnelApi */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = MobileAccessApi.framework/MobileAccessApi;
-			path = MobileAccessApi.framework;
-			remoteRef = F295431F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			name = MicrosoftTunnelApi.framework/MicrosoftTunnelApi;
+			path = MicrosoftTunnelApi.framework;
+			remoteRef = F277FC6E28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432228D4DD760026EAD5 /* libatlas_client.a */ = {
+		F277FC7128F75D870044E8A5 /* libatlas_client.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_client.a;
-			remoteRef = F295432128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7028F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432428D4DD760026EAD5 /* libatlas_client_perp.a */ = {
+		F277FC7328F75D870044E8A5 /* libatlas_client_perp.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_client_perp.a;
-			remoteRef = F295432328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7228F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432628D4DD760026EAD5 /* libatlas_common.a */ = {
+		F277FC7528F75D870044E8A5 /* libatlas_common.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_common.a;
-			remoteRef = F295432528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7428F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432828D4DD760026EAD5 /* libatlas_connect.a */ = {
+		F277FC7728F75D870044E8A5 /* libatlas_connect.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_connect.a;
-			remoteRef = F295432728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7628F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432A28D4DD760026EAD5 /* libatlas_crypto.a */ = {
+		F277FC7928F75D870044E8A5 /* libatlas_crypto.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_crypto.a;
-			remoteRef = F295432928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7828F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432C28D4DD760026EAD5 /* libatlas_fileio.a */ = {
+		F277FC7B28F75D870044E8A5 /* libatlas_fileio.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_fileio.a;
-			remoteRef = F295432B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7A28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295432E28D4DD760026EAD5 /* libatlas_keystore.a */ = {
+		F277FC7D28F75D870044E8A5 /* libatlas_keystore.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_keystore.a;
-			remoteRef = F295432D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7C28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433028D4DD760026EAD5 /* libatlas_plugin.a */ = {
+		F277FC7F28F75D870044E8A5 /* libatlas_plugin.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_plugin.a;
-			remoteRef = F295432F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC7E28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433228D4DD760026EAD5 /* libatlas_policy.a */ = {
+		F277FC8128F75D870044E8A5 /* libatlas_policy.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_policy.a;
-			remoteRef = F295433128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8028F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433428D4DD760026EAD5 /* libatlas_vnet.a */ = {
+		F277FC8328F75D870044E8A5 /* libatlas_vnet.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libatlas_vnet.a;
-			remoteRef = F295433328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8228F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433628D4DD760026EAD5 /* libcrypto_bcn.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto_bcn.a;
-			remoteRef = F295433528D4DD760026EAD5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F295433828D4DD760026EAD5 /* libduktape.a */ = {
+		F277FC8728F75D870044E8A5 /* libduktape.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libduktape.a;
-			remoteRef = F295433728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8628F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433A28D4DD760026EAD5 /* libhttp_parser.a */ = {
+		F277FC8928F75D870044E8A5 /* libhttp_parser.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libhttp_parser.a;
-			remoteRef = F295433928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8828F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433C28D4DD760026EAD5 /* libioshim.a */ = {
+		F277FC8B28F75D870044E8A5 /* libioshim.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libioshim.a;
-			remoteRef = F295433B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8A28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295433E28D4DD760026EAD5 /* libcurl.a */ = {
+		F277FC8D28F75D870044E8A5 /* libcurl.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libcurl.a;
-			remoteRef = F295433D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8C28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434028D4DD760026EAD5 /* liblwip.a */ = {
+		F277FC8F28F75D870044E8A5 /* liblwip.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = liblwip.a;
-			remoteRef = F295433F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC8E28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434228D4DD760026EAD5 /* libmapnext_antitamper.a */ = {
+		F277FC9128F75D870044E8A5 /* libmstapnext_antitamper.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_antitamper.a;
-			remoteRef = F295434128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_antitamper.a;
+			remoteRef = F277FC9028F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434428D4DD760026EAD5 /* libmapnext_core.a */ = {
+		F277FC9328F75D870044E8A5 /* libmstapnext_core.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_core.a;
-			remoteRef = F295434328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_core.a;
+			remoteRef = F277FC9228F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434628D4DD760026EAD5 /* libmapnext_keystore.a */ = {
+		F277FC9528F75D870044E8A5 /* libmstapnext_keystore.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_keystore.a;
-			remoteRef = F295434528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_keystore.a;
+			remoteRef = F277FC9428F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434828D4DD760026EAD5 /* libmapnext_policy_rules.a */ = {
+		F277FC9728F75D870044E8A5 /* libmstapnext_policy_rules.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_policy_rules.a;
-			remoteRef = F295434728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_policy_rules.a;
+			remoteRef = F277FC9628F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434A28D4DD760026EAD5 /* libmapnext_policy_source.a */ = {
+		F277FC9928F75D870044E8A5 /* libmstapnext_policy_source.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_policy_source.a;
-			remoteRef = F295434928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_policy_source.a;
+			remoteRef = F277FC9828F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434C28D4DD760026EAD5 /* libmapnext_policygate.a */ = {
+		F277FC9B28F75D870044E8A5 /* libmstapnext_policygate.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_policygate.a;
-			remoteRef = F295434B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_policygate.a;
+			remoteRef = F277FC9A28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295434E28D4DD760026EAD5 /* libmapnext_webauth.a */ = {
+		F277FC9D28F75D870044E8A5 /* libmstapnext_webauth.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libmapnext_webauth.a;
-			remoteRef = F295434D28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			path = libmstapnext_webauth.a;
+			remoteRef = F277FC9C28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435028D4DD760026EAD5 /* libmcp_services.a */ = {
+		F277FC9F28F75D870044E8A5 /* libmcp_services.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libmcp_services.a;
-			remoteRef = F295434F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FC9E28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435228D4DD760026EAD5 /* libprom_translate.a */ = {
+		F277FCA128F75D870044E8A5 /* libprom_translate.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libprom_translate.a;
-			remoteRef = F295435128D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCA028F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435428D4DD760026EAD5 /* libpromclient.a */ = {
+		F277FCA328F75D870044E8A5 /* libpromclient.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libpromclient.a;
-			remoteRef = F295435328D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCA228F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435628D4DD760026EAD5 /* libpromclient_ios.a */ = {
+		F277FCA528F75D870044E8A5 /* libpromclient_ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libpromclient_ios.a;
-			remoteRef = F295435528D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCA428F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435828D4DD760026EAD5 /* libproxmetheus_common.a */ = {
+		F277FCA728F75D870044E8A5 /* libproxmetheus_common.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libproxmetheus_common.a;
-			remoteRef = F295435728D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCA628F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435A28D4DD760026EAD5 /* libproxmetheus_ios.a */ = {
+		F277FCA928F75D870044E8A5 /* libproxmetheus_ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libproxmetheus_ios.a;
-			remoteRef = F295435928D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCA828F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435C28D4DD760026EAD5 /* librelink.a */ = {
+		F277FCAB28F75D870044E8A5 /* librelink.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = librelink.a;
-			remoteRef = F295435B28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCAA28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F295435E28D4DD760026EAD5 /* libssl_bcn.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libssl_bcn.a;
-			remoteRef = F295435D28D4DD760026EAD5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F295436028D4DD760026EAD5 /* libutils.a */ = {
+		F277FCAF28F75D870044E8A5 /* libutils.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libutils.a;
-			remoteRef = F295435F28D4DD760026EAD5 /* PBXContainerItemProxy */;
+			remoteRef = F277FCAE28F75D870044E8A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -974,8 +971,7 @@
 				F2CB201C28A2CD3F0031EB4A /* HostController.swift in Sources */,
 				F2CB201328A2CBB10031EB4A /* StringExtensions.swift in Sources */,
 				F27A298928BD06E6006F1EB2 /* WebViewTab.swift in Sources */,
-				F295426828D426A20026EAD5 /* IntuneDelegate.swift in Sources */,
-				F1007637275969220022F5A9 /* MobileAccessDelegate.swift in Sources */,
+				F1007637275969220022F5A9 /* MicrosoftTunnelDelegate.swift in Sources */,
 				F27A299828BD1C7A006F1EB2 /* SafeColor.swift in Sources */,
 				B59D848228D5369B00A1E9BD /* TunnelViewModel.swift in Sources */,
 				F2CB204328A2D6660031EB4A /* NSUrlSessionViewModel.swift in Sources */,

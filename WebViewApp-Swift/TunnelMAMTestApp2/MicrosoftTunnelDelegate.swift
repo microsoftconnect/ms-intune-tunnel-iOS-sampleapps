@@ -3,7 +3,7 @@
 //
 
 import Foundation
-import MobileAccessApi
+import MicrosoftTunnelApi
 import SwiftUI
 
 public protocol ConnectionListener {
@@ -14,10 +14,10 @@ public protocol ConnectionListener {
     func onError(_ error: MobileAccessError) -> Void
 }
 
-public class MobileAccessDelegate: NSObject, MobileAccessApi.MobileAccessDelegate {
+public class MicrosoftTunnelDelegate: NSObject, MicrosoftTunnelApi.MicrosoftTunnelDelegate {
     
-    static var sharedDelegate: MobileAccessDelegate = {
-        let delegate = MobileAccessDelegate()
+    static var sharedDelegate: MicrosoftTunnelDelegate = {
+        let delegate = MicrosoftTunnelDelegate()
         delegate.config.addEntries(from: [
             String.fromUtf8(kLoggingClassMobileAccess): String.fromUtf8(kLoggingSeverityDebug),
             String.fromUtf8(kLoggingClassConnect): String.fromUtf8(kLoggingSeverityDebug),
@@ -27,22 +27,24 @@ public class MobileAccessDelegate: NSObject, MobileAccessApi.MobileAccessDelegat
             String.fromUtf8(kLoggingClassSocket): String.fromUtf8(kLoggingSeverityDebug),
             String.fromUtf8(kLoggingClassIntune): String.fromUtf8(kLoggingSeverityDebug)
         ])
+        delegate.api = MicrosoftTunnelAPI.sharedInstance
         return delegate
     }()
     
     var connectionListeners: Array<ConnectionListener> = []
     let config: NSMutableDictionary = NSMutableDictionary.init()
-    var api: MobileAccessAPI?
+    var api: MicrosoftTunnelAPI?
     
-    func setVpnConfiguration(vpnConfig: Dictionary<String, Any>) {
-        self.config.addEntries(from: vpnConfig)
-    }
-    
-    func configureSDK(){
-        self.api = MobileAccessAPI.sharedInstance
-        let error = MobileAccessDelegate.sharedDelegate.api?.mobileAccessInitialize(with: MobileAccessDelegate.sharedDelegate, logDelegate: LogDelegate(), config: (self.config as! [String : String]))
-        if error != NoError {
-            NSLog("Failed to initialize MobileAccessAPI!")
+    func launch(){
+        guard let api = api else {
+            NSLog("MicrosoftTunnelAPI not initialized");
+            return;
+        }
+        if !api.launchEnrollment()  {
+            let error = api.mobileAccessInitialize(with: MicrosoftTunnelDelegate.sharedDelegate, logDelegate: LogDelegate(), config: (self.config as! [String : String]))
+            if error != NoError {
+                NSLog("Failed to initialize MicrosoftTunnelAPI!")
+            }
         }
     }
     
@@ -50,12 +52,8 @@ public class MobileAccessDelegate: NSObject, MobileAccessApi.MobileAccessDelegat
         connectionListeners.append(delegate)
     }
     
-    public func onTokenRequired(callback tokenCallback: TokenRequestCallback!, withFailedToken failedToken: String!) {
-        IntuneDelegate.sharedDelegate.onTokenRequiredWithCallback(tokenCallback: tokenCallback, failedToken: "")
-    }
-    
     public func onInitialized() {
-        MobileAccessDelegate.sharedDelegate.connect()
+        MicrosoftTunnelDelegate.sharedDelegate.connect()
         connectionListeners.forEach {
             $0.onInitialized()
         }
@@ -90,19 +88,19 @@ public class MobileAccessDelegate: NSObject, MobileAccessApi.MobileAccessDelegat
     }
 
     func connect() {
-        MobileAccessAPI.sharedInstance.connect()
+        MicrosoftTunnelAPI.sharedInstance.connect()
     }
     
     func disconnect() {
-        MobileAccessAPI.sharedInstance.disconnect()
+        MicrosoftTunnelAPI.sharedInstance.disconnect()
     }
     
     func getStatus() -> MobileAccessStatus{
-        return MobileAccessAPI.sharedInstance.getStatus()
+        return MicrosoftTunnelAPI.sharedInstance.getStatus()
     }
     
     func getStatusString() -> String {
-        return MobileAccessAPI.sharedInstance.getStatusString()
+        return MicrosoftTunnelAPI.sharedInstance.getStatusString()
     }
     
     public func onReceivedEvent(_ event: MobileAccessStatus) {

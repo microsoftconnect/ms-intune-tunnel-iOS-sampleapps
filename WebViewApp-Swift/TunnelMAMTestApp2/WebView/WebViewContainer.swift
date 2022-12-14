@@ -38,7 +38,10 @@ struct WebViewContainer : UIViewRepresentable {
         if webViewModel.shouldNavigate {
             webViewModel.shouldNavigate = false
             webViewModel.normalizeUrl()
-            let url = URL(string: webViewModel.url)!
+            var url = URL(string: Constants.searchPage)!
+            if(URL(string: webViewModel.url) != nil){
+                url = URL(string: webViewModel.url)!
+            }
             uiView.load(URLRequest(url: url))
         }
     }
