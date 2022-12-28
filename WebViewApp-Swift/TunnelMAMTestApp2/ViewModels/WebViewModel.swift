@@ -22,11 +22,8 @@ class WebViewModel : ObservableObject {
     }
     
     func normalizeUrl(){
-        if !url.hasPrefix("https://", .caseInsensitive) {
+        if !(url.hasPrefix("https://", .caseInsensitive) || url.hasPrefix("http://", .caseInsensitive)) {
             url = "https://\(url)"
-        }
-        if !url.matchesRegex("\\.\\w\\w") {
-            url = "\(url).com"
         }
     }
 }
