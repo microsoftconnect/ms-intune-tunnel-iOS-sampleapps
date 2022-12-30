@@ -1,6 +1,6 @@
 # Microsoft Tunnel SDK Sample Apps for iOS 
 
-Version [1.0.0](https://github.com/msintuneappsdk/ms-intune-tunnel-iOS-sampleapps)
+Versions [1.0.0] and [1.0.0](https://github.com/msintuneappsdk/ms-intune-tunnel-iOS-sampleapps)
 
 Sample apps utilizing the MAM Tunnel SDK to enable the app to connect to VPN protected corporate resources on a non-enrolled device.
 
