@@ -1,4 +1,4 @@
-# iOS unimportant directories and files
+# Unimportant directories and files
 .DS_Store
 ios/**/build/**
 **/xcuserdata/**
