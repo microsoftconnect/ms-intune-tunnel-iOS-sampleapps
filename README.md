@@ -1,6 +1,6 @@
 # Microsoft Tunnel SDK Sample Apps for iOS 
 
-Sample apps utilizing the MAM Tunnel SDK to enable the app to connect to VPN protected corporate resources on a non-enrolled device.
+Sample apps utilizing the Microsoft Tunnel for Mobile Application Management iOS SDK to enable the app to connect to VPN protected corporate resources on unenrolled devices.
 
 Supported Xcode and iOS versions:
 |Tunnel SDK Version | Intune SDK Version  | MSAL SDK Version  | Supported iOS Versions  | Supported Xcode Version | Support Scope |
