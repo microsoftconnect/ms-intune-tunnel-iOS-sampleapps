@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SampleApplication
+//  WebViewApp-Swift
 //
 //  Created by Todd Bohman on 8/1/22.
 //
@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             HttpClientTab(viewModel: CFHttpViewModel())
                 .tabItem{
-                    Label("CFHTTP", systemImage: "water.waves")
+                    Label("CFHTTP", systemImage: "atom")
                 }
             TunnelTab()
                 .tabItem{

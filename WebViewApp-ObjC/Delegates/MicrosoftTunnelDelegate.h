@@ -12,22 +12,22 @@
 #import <Foundation/Foundation.h>
 #import <MicrosoftTunnelApi/MicrosoftTunnel.h>
 
-extern const NSNotificationName kMobileAccessStatusUpdatedNotificationName;
+extern const NSNotificationName kMicrosoftTunnelStatusUpdatedNotificationName;
 
 @interface MicrosoftTunnelDelegate : NSObject <MicrosoftTunnelDelegate>
-@property(nonatomic, strong) MicrosoftTunnelAPI *m_api;
+@property(nonatomic, strong) MicrosoftTunnel *m_api;
 @property(nonatomic, strong) NSMutableDictionary *config;
 
 
 + (instancetype)sharedDelegate;
 - (NSString *)getStatusString;
 - (NSString *)getVersionString;
-- (MobileAccessStatus)getStatus;
+- (MicrosoftTunnelStatus)getStatus;
 
 - (void)connect;
 - (void)configureSDK;
 - (void)disconnect;
-- (void)onReceivedEvent:(MobileAccessStatus)event;
+- (void)onReceivedEvent:(MicrosoftTunnelStatus)event;
 - (void)setVpnConfiguration:(NSDictionary *)vpnConfig;
 
 @end

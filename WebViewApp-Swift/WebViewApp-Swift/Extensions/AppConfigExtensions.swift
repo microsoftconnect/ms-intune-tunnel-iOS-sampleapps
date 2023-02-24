@@ -1,6 +1,6 @@
 //
 //  AppConfigExtensions.swift
-//  TunnelMAMTestApp2
+//  WebViewApp-Swift
 //
 //  Created by Todd Bohman on 9/16/22.
 //
@@ -14,7 +14,7 @@ extension IntuneMAMAppConfig {
         
         if hasConflict(forKey) {
             let values = self.allStrings(forKey: forKey)
-            NSLog("appConfig has conflicting values for key '\(forKey)'. Picked <\(String(describing: value))> from values: \(values)")
+            NSLog("appConfig has conflicting values for key '\(forKey)'. Picked <\(String(describing: value))> from values: \(String(describing: values))")
         }
         
         return value
@@ -25,7 +25,7 @@ extension IntuneMAMAppConfig {
         
         if hasConflict(forKey) {
             let values = self.allNumbers(forKey: forKey)
-            NSLog("appConfig has conflicting values for key '\(forKey)'. Picked <\(String(describing: value))> from values: \(values)")
+            NSLog("appConfig has conflicting values for key '\(forKey)'. Picked <\(String(describing: value))> from values: \(String(describing: values))")
         }
         
         return value

@@ -11,7 +11,7 @@
 
 #import <IntuneMAMSwift/IntuneMAMSwift.h>
 
-typedef void (^TokenRequestCallback)(NSString* accessToken);
+typedef void (^TokenRequestCallback)(NSString* _Nullable accessToken);
 
 @interface IntuneDelegate : NSObject<IntuneMAMEnrollmentDelegate>
 

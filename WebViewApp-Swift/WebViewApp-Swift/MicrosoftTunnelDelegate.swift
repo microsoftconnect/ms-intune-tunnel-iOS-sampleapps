@@ -11,7 +11,7 @@ public protocol ConnectionListener {
     func onReconnecting() -> Void
     func onInitialized() -> Void
     func onDisconnected() -> Void
-    func onError(_ error: MobileAccessError) -> Void
+    func onError(_ error: MicrosoftTunnelError) -> Void
 }
 
 public class MicrosoftTunnelDelegate: NSObject, MicrosoftTunnelApi.MicrosoftTunnelDelegate {
@@ -19,7 +19,7 @@ public class MicrosoftTunnelDelegate: NSObject, MicrosoftTunnelApi.MicrosoftTunn
     static var sharedDelegate: MicrosoftTunnelDelegate = {
         let delegate = MicrosoftTunnelDelegate()
         delegate.config.addEntries(from: [
-            String.fromUtf8(kLoggingClassMobileAccess): String.fromUtf8(kLoggingSeverityDebug),
+            String.fromUtf8(kLoggingClassMicrosoftTunnel): String.fromUtf8(kLoggingSeverityDebug),
             String.fromUtf8(kLoggingClassConnect): String.fromUtf8(kLoggingSeverityDebug),
             String.fromUtf8(kLoggingClassInternal): String.fromUtf8(kLoggingSeverityDebug),
             String.fromUtf8(kLoggingClassHttp): String.fromUtf8(kLoggingSeverityDebug),
@@ -27,23 +27,23 @@ public class MicrosoftTunnelDelegate: NSObject, MicrosoftTunnelApi.MicrosoftTunn
             String.fromUtf8(kLoggingClassSocket): String.fromUtf8(kLoggingSeverityDebug),
             String.fromUtf8(kLoggingClassIntune): String.fromUtf8(kLoggingSeverityDebug)
         ])
-        delegate.api = MicrosoftTunnelAPI.sharedInstance
+        delegate.api = MicrosoftTunnel.sharedInstance
         return delegate
     }()
     
     var connectionListeners: Array<ConnectionListener> = []
     let config: NSMutableDictionary = NSMutableDictionary.init()
-    var api: MicrosoftTunnelAPI?
+    var api: MicrosoftTunnel?
     
     func launch(){
         guard let api = api else {
-            NSLog("MicrosoftTunnelAPI not initialized");
+            NSLog("MicrosoftTunnel not initialized");
             return;
         }
         if !api.launchEnrollment()  {
-            let error = api.mobileAccessInitialize(with: MicrosoftTunnelDelegate.sharedDelegate, logDelegate: LogDelegate(), config: (self.config as! [String : String]))
+            let error = api.microsoftTunnelInitialize(with: MicrosoftTunnelDelegate.sharedDelegate, logDelegate: LogDelegate(), config: (self.config as! [String : String]))
             if error != NoError {
-                NSLog("Failed to initialize MicrosoftTunnelAPI!")
+                NSLog("Failed to initialize MicrosoftTunnel!")
             }
         }
     }
@@ -81,29 +81,29 @@ public class MicrosoftTunnelDelegate: NSObject, MicrosoftTunnelApi.MicrosoftTunn
         }
     }
     
-    public func onError(_ error: MobileAccessError) {
+    public func onError(_ error: MicrosoftTunnelError) {
         connectionListeners.forEach {
             $0.onError(error)
         }
     }
 
     func connect() {
-        MicrosoftTunnelAPI.sharedInstance.connect()
+        MicrosoftTunnel.sharedInstance.connect()
     }
     
     func disconnect() {
-        MicrosoftTunnelAPI.sharedInstance.disconnect()
+        MicrosoftTunnel.sharedInstance.disconnect()
     }
     
-    func getStatus() -> MobileAccessStatus{
-        return MicrosoftTunnelAPI.sharedInstance.getStatus()
+    func getStatus() -> MicrosoftTunnelStatus{
+        return MicrosoftTunnel.sharedInstance.getStatus()
     }
     
     func getStatusString() -> String {
-        return MicrosoftTunnelAPI.sharedInstance.getStatusString()
+        return MicrosoftTunnel.sharedInstance.getStatusString()
     }
     
-    public func onReceivedEvent(_ event: MobileAccessStatus) {
+    public func onReceivedEvent(_ event: MicrosoftTunnelStatus) {
         // do nothing yet.
     }
 }

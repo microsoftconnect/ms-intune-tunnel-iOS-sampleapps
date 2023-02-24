@@ -225,10 +225,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mobileAccessButton" destination="ejc-28-lPp" id="cia-Yv-2Hv"/>
-                        <outlet property="mobileAccessLabel" destination="ZpV-Iq-Fgm" id="miY-Nc-hdw"/>
-                        <outlet property="mobileAccessStatus" destination="afR-Qn-pKV" id="c6c-dZ-vSd"/>
-                        <outlet property="versionNumberLabel" destination="WKG-vS-6ED" id="NWl-D4-uzy"/>
+                        <outlet property="microsoftTunnelButton" destination="ejc-28-lPp" id="SO1-Mz-Z0y"/>
+                        <outlet property="microsoftTunnelLabel" destination="pBQ-OG-WJV" id="V8F-lU-5Lz"/>
+                        <outlet property="microsoftTunnelStatus" destination="afR-Qn-pKV" id="vHl-a7-HGd"/>
+                        <outlet property="versionNumberLabel" destination="WKG-vS-6ED" id="CLz-c0-egh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiR-zx-sVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -247,18 +247,18 @@
                                 <rect key="frame" x="20" y="726" width="374" height="63"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kXI-CY-zbb">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="63"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" systemColor="systemPinkColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Untrusted"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Untrusted"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="A47-Sd-W3g">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="63"/>
+                                        <rect key="frame" x="307" y="0.0" width="67" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Trusted"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Trusted"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -275,7 +275,7 @@
                                     <action selector="refreshButtonClicked:" destination="jY0-xK-DkG" id="0Ad-bY-mKo"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem style="plain" id="TmX-MQ-R15">
+                            <barButtonItem id="TmX-MQ-R15">
                                 <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="kI6-oJ-pbX">
                                     <rect key="frame" x="74" y="11" width="278" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -362,9 +362,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj8-bO-BcW">
-                                <rect key="frame" x="328" y="121" width="63.5" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Send"/>
+                                <rect key="frame" x="355.5" y="121" width="36" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Send"/>
                                 <connections>
                                     <action selector="sendMessage:" destination="Afc-ic-YQs" eventType="touchUpInside" id="7xo-JF-g7w"/>
                                 </connections>
@@ -432,15 +432,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nEn-P4-gnO">
                                 <rect key="frame" x="20" y="741" width="187" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Trusted"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Trusted"/>
                                 <connections>
                                     <action selector="TrustedHandler:" destination="PJd-Eh-mrN" eventType="touchUpInside" id="OYa-8j-GA9"/>
                                     <action selector="TrustedHandler:" destination="3iH-ls-gSt" eventType="touchUpInside" id="fSY-jd-GXA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Response" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-Yj-g1y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Response" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-Yj-g1y">
                                 <rect key="frame" x="72" y="169" width="288" height="500"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -455,9 +455,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="afe-AS-jaO">
                                 <rect key="frame" x="215" y="741" width="179" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Untrusted"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Untrusted"/>
                                 <connections>
                                     <action selector="UntrustedHandler:" destination="PJd-Eh-mrN" eventType="touchUpInside" id="mcK-ii-lkh"/>
                                     <action selector="UntrustedHandler:" destination="3iH-ls-gSt" eventType="touchUpInside" id="wNF-vX-3iA"/>
@@ -521,16 +521,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="uKV-Sg-mUR">
                                 <rect key="frame" x="20" y="741" width="187" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Trusted"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Trusted"/>
                                 <connections>
                                     <action selector="TrustedHandler:" destination="8zL-sP-Iv9" eventType="touchUpInside" id="VYj-yn-qwA"/>
                                     <action selector="TrustedHandler:" destination="PJd-Eh-mrN" eventType="touchUpInside" id="YCK-74-ccS"/>
                                     <action selector="TrustedHandler:" destination="UGy-FB-s4I" eventType="touchUpInside" id="zhR-Kt-giW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Response" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAi-FG-nQZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Response" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAi-FG-nQZ">
                                 <rect key="frame" x="72" y="169" width="288" height="500"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -545,9 +545,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kc4-hO-ieH">
                                 <rect key="frame" x="215" y="741" width="179" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Untrusted"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Untrusted"/>
                                 <connections>
                                     <action selector="UntrustedHandler:" destination="8zL-sP-Iv9" eventType="touchUpInside" id="ReR-0Y-vA6"/>
                                     <action selector="UntrustedHandler:" destination="PJd-Eh-mrN" eventType="touchUpInside" id="meX-B7-8gK"/>
@@ -597,12 +597,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

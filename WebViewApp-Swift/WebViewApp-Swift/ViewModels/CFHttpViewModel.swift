@@ -1,6 +1,6 @@
 //
 //  CFHttpViewModel.swift
-//  TunnelMAMTestApp2
+//  WebViewApp-Swift
 //
 //  Created by Todd Bohman on 8/15/22.
 //
@@ -73,7 +73,7 @@ class CFHttpViewModel : NSObject, IHttpClientViewModel, StreamDelegate {
 
         switch eventCode {
         case .hasBytesAvailable:
-            let size = 1024
+            let size = 4096 * 2
             let buf: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer<UInt8>.allocate(capacity: size)
             let len = inputStream.read(buf, maxLength: size)
             if len != 0 {
@@ -86,7 +86,7 @@ class CFHttpViewModel : NSObject, IHttpClientViewModel, StreamDelegate {
             CFHTTPMessageAppendBytes(response, buf, len)
             let body = CFHTTPMessageCopyBody(response)?.takeUnretainedValue()
             
-            self.data = String(data: body as! Data, encoding: .utf8)
+            self.data = String(data: body! as Data, encoding: .utf8)
             CloseStream(inputStream)
             self.inputStream = nil
         case .errorOccurred:
@@ -120,6 +120,7 @@ class CFHttpViewModel : NSObject, IHttpClientViewModel, StreamDelegate {
             let myRequest:CFHTTPMessage = CFHTTPMessageCreateRequest(kCFAllocatorDefault, "GET" as CFString, myURL, kCFHTTPVersion1_1).takeUnretainedValue()
             let bodyDataExt:CFData = CFStringCreateExternalRepresentation(kCFAllocatorDefault, bodyString, CFStringBuiltInEncodings.UTF8.rawValue, 0)
             CFHTTPMessageSetBody(myRequest, bodyDataExt)
+            CFHTTPMessageSetHeaderFieldValue(myRequest, "Host" as CFString, CFURLCopyHostName(myURL))
             
             let mySerializedRequest:CFData = CFHTTPMessageCopySerializedMessage(myRequest)!.takeUnretainedValue()
             
