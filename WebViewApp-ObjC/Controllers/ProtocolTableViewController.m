@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     protocols = [NSMutableArray arrayWithObjects:@"Webview", @"Socket Echo",@"CFHTTP", @"URLSession", nil];
-    MobileAccessStatus status = [[MicrosoftTunnelDelegate sharedDelegate] getStatus];
+    MicrosoftTunnelStatus status = [[MicrosoftTunnelDelegate sharedDelegate] getStatus];
     switch (status) {
         case Uninitialized:
             [MicrosoftTunnelDelegate sharedDelegate];
@@ -30,7 +30,7 @@
             break;
         default:
         {
-            NSString *errorMessage = [NSString stringWithFormat:@"Request attempted with invalid MicrosoftTunnelAPI state: %@",
+            NSString *errorMessage = [NSString stringWithFormat:@"Request attempted with invalid MicrosoftTunnel state: %@",
                                       [MicrosoftTunnelDelegate.sharedDelegate getStatusString]];
             [self showErrorAlert:@"Invalid State!" withMessage:errorMessage];
             return;

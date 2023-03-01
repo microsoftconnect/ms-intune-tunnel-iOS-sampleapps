@@ -1,6 +1,6 @@
 //
 //  TunnelView.swift
-//  TunnelMAMTestApp2
+//  WebViewApp-Swift
 //
 //  Created by Michael Liddle on 9/16/22.
 //
@@ -14,9 +14,9 @@ struct TunnelTab: View {
     
     var body: some View {
         VStack{
-            Text("Tunnel Status: \(viewModel.status)")
+            Text("Tunnel Status: \(viewModel.statusString)")
             Spacer()
-            if MicrosoftTunnelDelegate.sharedDelegate.getStatusString() == "Connected" {
+            if viewModel.status == .connected {
                 HStack(alignment: .center, spacing: 5) {
                     Button(action: {
                         MicrosoftTunnelDelegate.sharedDelegate.disconnect()

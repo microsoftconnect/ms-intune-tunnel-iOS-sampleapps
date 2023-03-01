@@ -16,7 +16,7 @@
     [super viewDidLoad];
     
     self.versionNumberLabel.text = [[NSBundle.mainBundle infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    self.mobileAccessStatus.text = @"Uninitialized";
+    self.microsoftTunnelStatus.text = @"Uninitialized";
     [self updateVersionLabel];
 }
 
@@ -24,7 +24,7 @@
 {
     [self updateLabel];
 
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(onMobileAccessStatusChanged:) name:kMobileAccessStatusUpdatedNotificationName object:nil];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(onMicrosoftTunnelStatusChanged:) name:kMicrosoftTunnelStatusUpdatedNotificationName object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -33,7 +33,7 @@
 }
 
 - (IBAction)handlePress:(id)sender {
-    [self.mobileAccessButton setEnabled:NO];
+    [self.microsoftTunnelButton setEnabled:NO];
     switch ([MicrosoftTunnelDelegate.sharedDelegate getStatus]) {
         case Initialized:
         case Disconnected:
@@ -58,34 +58,34 @@
 
 - (void)updateVersionLabel
 {
-    self.mobileAccessLabel.text = [MicrosoftTunnelDelegate.sharedDelegate getVersionString];
+    self.microsoftTunnelLabel.text = [MicrosoftTunnelDelegate.sharedDelegate getVersionString];
 }
 
 - (void)updateLabel
 {
-    self.mobileAccessStatus.text = [MicrosoftTunnelDelegate.sharedDelegate getStatusString];
+    self.microsoftTunnelStatus.text = [MicrosoftTunnelDelegate.sharedDelegate getStatusString];
     switch ([MicrosoftTunnelDelegate.sharedDelegate getStatus]) {
         case Initialized:
         case Disconnected:
-            [self.mobileAccessButton setTitle:@"Connect" forState:UIControlStateNormal];
-            [self.mobileAccessButton setEnabled:YES];
+            [self.microsoftTunnelButton setTitle:@"Connect" forState:UIControlStateNormal];
+            [self.microsoftTunnelButton setEnabled:YES];
             break;
         case Connected:
-            [self.mobileAccessButton setTitle:@"Disconnect" forState:UIControlStateNormal];
-            [self.mobileAccessButton setEnabled:YES];
+            [self.microsoftTunnelButton setTitle:@"Disconnect" forState:UIControlStateNormal];
+            [self.microsoftTunnelButton setEnabled:YES];
             break;
         case Reconnecting:
-            [self.mobileAccessButton setTitle:@"Disconnect" forState:UIControlStateNormal];
-            [self.mobileAccessButton setEnabled:NO];
+            [self.microsoftTunnelButton setTitle:@"Disconnect" forState:UIControlStateNormal];
+            [self.microsoftTunnelButton setEnabled:NO];
             break;
         default:
-            [self.mobileAccessButton setTitle:@"Disabled" forState:UIControlStateDisabled];
-            [self.mobileAccessButton setEnabled:NO];
+            [self.microsoftTunnelButton setTitle:@"Disabled" forState:UIControlStateDisabled];
+            [self.microsoftTunnelButton setEnabled:NO];
             break;
     }
 }
 
-- (void)onMobileAccessStatusChanged:(NSNotification *)notification
+- (void)onMicrosoftTunnelStatusChanged:(NSNotification *)notification
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self updateLabel];

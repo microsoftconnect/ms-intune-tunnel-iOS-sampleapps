@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B910E977294417950025A9C0 /* ObjCSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B910E975294417950025A9C0 /* ObjCSample-Info.plist */; };
 		B952379828EB3C9D00C14310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B952377C28EB3C9800C14310 /* Assets.xcassets */; };
 		B952379928EB3C9D00C14310 /* IntuneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B952377F28EB3C9900C14310 /* IntuneDelegate.m */; };
 		B952379A28EB3C9D00C14310 /* MicrosoftTunnelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B952378028EB3C9900C14310 /* MicrosoftTunnelDelegate.m */; };
@@ -24,23 +23,6 @@
 		B9A1088B28FDFE4A005FD7FF /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A1088A28FDFE4A005FD7FF /* NSURLSessionViewController.m */; };
 		B9B2D8E228ECEDF6009D103D /* EchoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B2D8E128ECEDF6009D103D /* EchoDelegate.m */; };
 		B9B2D8E428ECF0C6009D103D /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B2D8E328ECF0C6009D103D /* SocketViewController.m */; };
-		B9EC77262946875F00EB6412 /* MCPPluginUnencryptedFile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB26D2946874600FAAB5B /* MCPPluginUnencryptedFile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77272946875F00EB6412 /* MSTAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB26E2946874600FAAB5B /* MSTAPNextPluginSecurityOpenssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77282946875F00EB6412 /* MCPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB26F2946874600FAAB5B /* MCPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77292946875F00EB6412 /* MCPCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2702946874600FAAB5B /* MCPCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC772A2946875F00EB6412 /* MSTAPNextPluginSwiftSupport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2712946874600FAAB5B /* MSTAPNextPluginSwiftSupport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC772B2946875F00EB6412 /* IntuneMAMSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2722946874600FAAB5B /* IntuneMAMSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC772C2946875F00EB6412 /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2732946874600FAAB5B /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC772D2946875F00EB6412 /* crypto.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2742946874600FAAB5B /* crypto.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC772E2946875F00EB6412 /* ssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2752946874600FAAB5B /* ssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC772F2946875F00EB6412 /* MicrosoftTunnelApi.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2762946874600FAAB5B /* MicrosoftTunnelApi.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77302946875F00EB6412 /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2772946874600FAAB5B /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77312946875F00EB6412 /* MSTAPNextPluginSecurityOpensslFIPS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2782946874600FAAB5B /* MSTAPNextPluginSecurityOpensslFIPS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77322946875F00EB6412 /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2792946874600FAAB5B /* IntuneMAMSwiftStub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9EC77332946877400EB6412 /* IntuneMAMSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2722946874600FAAB5B /* IntuneMAMSwift.xcframework */; };
-		B9EC77342946877400EB6412 /* IntuneMAMSwiftStub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2792946874600FAAB5B /* IntuneMAMSwiftStub.xcframework */; };
-		B9EC77352946877400EB6412 /* MicrosoftTunnelApi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2762946874600FAAB5B /* MicrosoftTunnelApi.xcframework */; };
-		B9EC77362946877400EB6412 /* MSAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EDB2772946874600FAAB5B /* MSAL.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,19 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B9EC77262946875F00EB6412 /* MCPPluginUnencryptedFile.xcframework in Embed Frameworks */,
-				B9EC77272946875F00EB6412 /* MSTAPNextPluginSecurityOpenssl.xcframework in Embed Frameworks */,
-				B9EC77282946875F00EB6412 /* MCPCommon.xcframework in Embed Frameworks */,
-				B9EC77292946875F00EB6412 /* MCPCore.xcframework in Embed Frameworks */,
-				B9EC772A2946875F00EB6412 /* MSTAPNextPluginSwiftSupport.xcframework in Embed Frameworks */,
-				B9EC772B2946875F00EB6412 /* IntuneMAMSwift.xcframework in Embed Frameworks */,
-				B9EC772C2946875F00EB6412 /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework in Embed Frameworks */,
-				B9EC772D2946875F00EB6412 /* crypto.xcframework in Embed Frameworks */,
-				B9EC772E2946875F00EB6412 /* ssl.xcframework in Embed Frameworks */,
-				B9EC772F2946875F00EB6412 /* MicrosoftTunnelApi.xcframework in Embed Frameworks */,
-				B9EC77302946875F00EB6412 /* MSAL.xcframework in Embed Frameworks */,
-				B9EC77312946875F00EB6412 /* MSTAPNextPluginSecurityOpensslFIPS.xcframework in Embed Frameworks */,
-				B9EC77322946875F00EB6412 /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,19 +70,6 @@
 		B9B2D8E128ECEDF6009D103D /* EchoDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EchoDelegate.m; sourceTree = "<group>"; };
 		B9B2D8E328ECF0C6009D103D /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		B9B2D8E528ECF0D1009D103D /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
-		B9EDB26D2946874600FAAB5B /* MCPPluginUnencryptedFile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MCPPluginUnencryptedFile.xcframework; sourceTree = "<group>"; };
-		B9EDB26E2946874600FAAB5B /* MSTAPNextPluginSecurityOpenssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSTAPNextPluginSecurityOpenssl.xcframework; sourceTree = "<group>"; };
-		B9EDB26F2946874600FAAB5B /* MCPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MCPCommon.xcframework; sourceTree = "<group>"; };
-		B9EDB2702946874600FAAB5B /* MCPCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MCPCore.xcframework; sourceTree = "<group>"; };
-		B9EDB2712946874600FAAB5B /* MSTAPNextPluginSwiftSupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSTAPNextPluginSwiftSupport.xcframework; sourceTree = "<group>"; };
-		B9EDB2722946874600FAAB5B /* IntuneMAMSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IntuneMAMSwift.xcframework; sourceTree = "<group>"; };
-		B9EDB2732946874600FAAB5B /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSTAPNextPluginVpnMicrosoftTunnel.xcframework; sourceTree = "<group>"; };
-		B9EDB2742946874600FAAB5B /* crypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = crypto.xcframework; sourceTree = "<group>"; };
-		B9EDB2752946874600FAAB5B /* ssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ssl.xcframework; sourceTree = "<group>"; };
-		B9EDB2762946874600FAAB5B /* MicrosoftTunnelApi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MicrosoftTunnelApi.xcframework; sourceTree = "<group>"; };
-		B9EDB2772946874600FAAB5B /* MSAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSAL.xcframework; sourceTree = "<group>"; };
-		B9EDB2782946874600FAAB5B /* MSTAPNextPluginSecurityOpensslFIPS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSTAPNextPluginSecurityOpensslFIPS.xcframework; sourceTree = "<group>"; };
-		B9EDB2792946874600FAAB5B /* IntuneMAMSwiftStub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IntuneMAMSwiftStub.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9EC77332946877400EB6412 /* IntuneMAMSwift.xcframework in Frameworks */,
-				B9EC77342946877400EB6412 /* IntuneMAMSwiftStub.xcframework in Frameworks */,
-				B9EC77352946877400EB6412 /* MicrosoftTunnelApi.xcframework in Frameworks */,
-				B9EC77362946877400EB6412 /* MSAL.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +129,6 @@
 		B95E37A228DA533000EA7FD2 = {
 			isa = PBXGroup;
 			children = (
-				B9EDB26C2946874600FAAB5B /* Frameworks */,
 				B910E975294417950025A9C0 /* ObjCSample-Info.plist */,
 				B910E976294417950025A9C0 /* ObjCSample.entitlements */,
 				B963441C28F9BF3800654AD9 /* Utils */,
@@ -209,26 +160,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		B9EDB26C2946874600FAAB5B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9EDB26D2946874600FAAB5B /* MCPPluginUnencryptedFile.xcframework */,
-				B9EDB26E2946874600FAAB5B /* MSTAPNextPluginSecurityOpenssl.xcframework */,
-				B9EDB26F2946874600FAAB5B /* MCPCommon.xcframework */,
-				B9EDB2702946874600FAAB5B /* MCPCore.xcframework */,
-				B9EDB2712946874600FAAB5B /* MSTAPNextPluginSwiftSupport.xcframework */,
-				B9EDB2722946874600FAAB5B /* IntuneMAMSwift.xcframework */,
-				B9EDB2732946874600FAAB5B /* MSTAPNextPluginVpnMicrosoftTunnel.xcframework */,
-				B9EDB2742946874600FAAB5B /* crypto.xcframework */,
-				B9EDB2752946874600FAAB5B /* ssl.xcframework */,
-				B9EDB2762946874600FAAB5B /* MicrosoftTunnelApi.xcframework */,
-				B9EDB2772946874600FAAB5B /* MSAL.xcframework */,
-				B9EDB2782946874600FAAB5B /* MSTAPNextPluginSecurityOpensslFIPS.xcframework */,
-				B9EDB2792946874600FAAB5B /* IntuneMAMSwiftStub.xcframework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,7 +188,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					B95E37AA28DA533000EA7FD2 = {
 						CreatedOnToolsVersion = 14.0;
@@ -287,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B910E977294417950025A9C0 /* ObjCSample-Info.plist in Resources */,
 				B952379828EB3C9D00C14310 /* Assets.xcassets in Resources */,
 				B952379D28EB3C9D00C14310 /* Main.storyboard in Resources */,
 				B952379C28EB3C9D00C14310 /* LaunchScreen.storyboard in Resources */,
@@ -458,7 +388,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/ObjCSample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DHC2AQW779;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/macos-arm64_x86_64",
@@ -485,7 +415,7 @@
 				MARKETING_VERSION = 1.0;
 				MOBILE_ACCESS = 1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.objc2301;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.webviewappobjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +430,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/ObjCSample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DHC2AQW779;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/macos-arm64_x86_64",
@@ -526,7 +456,7 @@
 				MARKETING_VERSION = 1.0;
 				MOBILE_ACCESS = 1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.objc2301;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.webviewappobjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

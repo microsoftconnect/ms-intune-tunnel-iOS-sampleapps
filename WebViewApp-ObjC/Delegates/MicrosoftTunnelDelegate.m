@@ -11,7 +11,7 @@
 #import "MicrosoftTunnelLogDelegate.h"
 #import "IntuneDelegate.h"
 
-const NSNotificationName kMobileAccessStatusUpdatedNotificationName = @"MobileAccessStatusUpdatedNotification";
+const NSNotificationName kMicrosoftTunnelStatusUpdatedNotificationName = @"MicrosoftTunnelStatusUpdatedNotification";
 
 @implementation MicrosoftTunnelDelegate
 
@@ -24,7 +24,7 @@ static MicrosoftTunnelDelegate *sm_sharedDelegate = NULL;
         sm_sharedDelegate = [MicrosoftTunnelDelegate new];
         sm_sharedDelegate.config = [NSMutableDictionary dictionary];
         [sm_sharedDelegate.config addEntriesFromDictionary: @{
-            [NSString stringWithUTF8String:kLoggingClassMobileAccess]: [NSString stringWithUTF8String:kLoggingSeverityDebug],
+            [NSString stringWithUTF8String:kLoggingClassMicrosoftTunnel]: [NSString stringWithUTF8String:kLoggingSeverityDebug],
             [NSString stringWithUTF8String:kLoggingClassConnect]: [NSString stringWithUTF8String:kLoggingSeverityDebug],
             [NSString stringWithUTF8String:kLoggingClassInternal]: [NSString stringWithUTF8String:kLoggingSeverityDebug]
         }];
@@ -34,11 +34,11 @@ static MicrosoftTunnelDelegate *sm_sharedDelegate = NULL;
 
 - (void)configureSDK
 {
-    self.m_api = MicrosoftTunnelAPI.sharedInstance;
-    MobileAccessError err = [sm_sharedDelegate.m_api mobileAccessInitializeWithDelegate:sm_sharedDelegate logDelegate:MicrosoftTunnelLogDelegate.logDelegate config:self.config];
+    self.m_api = MicrosoftTunnel.sharedInstance;
+    MicrosoftTunnelError err = [sm_sharedDelegate.m_api microsoftTunnelInitializeWithDelegate:sm_sharedDelegate logDelegate:MicrosoftTunnelLogDelegate.logDelegate config:self.config];
     if (NoError != err)
     {
-        NSLog(@"Failed to initialize MicrosoftTunnelAPI!");
+        NSLog(@"Failed to initialize MicrosoftTunnel!");
     }
 }
 
@@ -66,7 +66,7 @@ static MicrosoftTunnelDelegate *sm_sharedDelegate = NULL;
     [self.config addEntriesFromDictionary:vpnConfig];
 }
 
-- (MobileAccessStatus)getStatus
+- (MicrosoftTunnelStatus)getStatus
 {
     return [self.m_api getStatus];
 }
@@ -91,11 +91,11 @@ static MicrosoftTunnelDelegate *sm_sharedDelegate = NULL;
     [self.m_api disconnect];
 }
 
-- (void)onReceivedEvent:(MobileAccessStatus)event
+- (void)onReceivedEvent:(MicrosoftTunnelStatus)event
 {
     NSLog(@"%s event: %u", __PRETTY_FUNCTION__, event);
 
-    [NSNotificationCenter.defaultCenter postNotificationName:kMobileAccessStatusUpdatedNotificationName object:nil];
+    [NSNotificationCenter.defaultCenter postNotificationName:kMicrosoftTunnelStatusUpdatedNotificationName object:nil];
 }
 
 - (void)onConnected
@@ -110,7 +110,7 @@ static MicrosoftTunnelDelegate *sm_sharedDelegate = NULL;
 }
 
 
-- (void)onError:(MobileAccessError)error
+- (void)onError:(MicrosoftTunnelError)error
 {
     NSLog(@"%s: error: %u", __PRETTY_FUNCTION__, error);
 }

@@ -1,6 +1,6 @@
 //
 //  HttpClientTab.swift
-//  TunnelMAMTestApp2
+//  WebViewApp-Swift
 //
 //  Created by Todd Bohman on 8/29/22.
 //
@@ -13,7 +13,9 @@ struct HttpClientTab<ViewModel>: View where ViewModel: IHttpClientViewModel {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Data: \(viewModel.data ?? "None")")
+            ScrollView{
+                Text("Data: \(viewModel.data ?? "None")")
+            }
             Spacer()
             if !(viewModel.error?.isEmpty ?? true) {
                 Text("Error: \(viewModel.error ?? "None")")

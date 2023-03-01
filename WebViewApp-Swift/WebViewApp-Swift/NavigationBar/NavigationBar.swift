@@ -1,6 +1,6 @@
 //
 //  NavigationBar.swift
-//  SampleApplication
+//  WebViewApp-Swift
 //
 //  Created by Todd Bohman on 8/2/22.
 //

@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AboutViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *versionNumberLabel;
-@property (weak, nonatomic) IBOutlet UILabel *mobileAccessStatus;
-@property (weak, nonatomic) IBOutlet UIButton *mobileAccessButton;
-@property (weak, nonatomic) IBOutlet UILabel *mobileAccessLabel;
+@property (weak, nonatomic) IBOutlet UILabel *microsoftTunnelStatus;
+@property (weak, nonatomic) IBOutlet UIButton *microsoftTunnelButton;
+@property (weak, nonatomic) IBOutlet UILabel *microsoftTunnelLabel;
 
-- (void) onMobileAccessStatusChanged:(NSNotification *)notification;
+- (void) onMicrosoftTunnelStatusChanged:(NSNotification *)notification;
 
 @end
 
