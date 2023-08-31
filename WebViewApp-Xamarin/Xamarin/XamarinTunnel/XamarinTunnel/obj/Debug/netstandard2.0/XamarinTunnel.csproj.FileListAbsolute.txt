@@ -1,0 +1,14 @@
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\bin\Debug\netstandard2.0\XamarinTunnel.deps.json
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\bin\Debug\netstandard2.0\XamarinTunnel.dll
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\bin\Debug\netstandard2.0\ref\XamarinTunnel.dll
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\bin\Debug\netstandard2.0\XamarinTunnel.pdb
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.csproj.AssemblyReference.cache
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.GeneratedMSBuildEditorConfig.editorconfig
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.AssemblyInfoInputs.cache
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.AssemblyInfo.cs
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.csproj.CoreCompileInputs.cache
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamlC.stamp
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.dll
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\refint\XamarinTunnel.dll
+C:\OB\Intune\xplat\MAMTunnel\projects\dotnet\Samples\Xamarin\XamarinTunnel\XamarinTunnel\obj\Debug\netstandard2.0\XamarinTunnel.pdb

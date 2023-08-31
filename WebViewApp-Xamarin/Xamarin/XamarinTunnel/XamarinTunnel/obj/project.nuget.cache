@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "YL4Rtn+Uxk4N64JoOwVX1Jg4NIrwx3ags9qsxm8/ZYuGRgU8GfJvh8AZf+YGzeWIrXrTt1sMkPzGsDYfHGZr6Q==",
+  "success": true,
+  "projectFilePath": "C:\\OB\\Intune\\xplat\\MAMTunnel\\projects\\dotnet\\Samples\\Xamarin\\XamarinTunnel\\XamarinTunnel\\XamarinTunnel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ermer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ermer\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ermer\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ermer\\.nuget\\packages\\xamarin.essentials\\1.7.5\\xamarin.essentials.1.7.5.nupkg.sha512",
+    "C:\\Users\\ermer\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512"
+  ],
+  "logs": []
+}

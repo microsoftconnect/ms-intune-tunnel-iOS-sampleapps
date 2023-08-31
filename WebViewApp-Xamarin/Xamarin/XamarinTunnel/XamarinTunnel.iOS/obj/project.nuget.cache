@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "umilgxNWM3g4ftLQL2XbsmPtbzaBlBr/MqQu0dXO/V5nhMU0kcbWUHw88tuRn1mnbpNSlBLXIe/pYmSlOSSxYA==",
+  "success": false,
+  "projectFilePath": "C:\\OB\\Intune\\xplat\\MAMTunnel\\projects\\dotnet\\Samples\\Xamarin\\XamarinTunnel\\XamarinTunnel.iOS\\XamarinTunnel.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ermer\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ermer\\.nuget\\packages\\xamarin.essentials\\1.7.5\\xamarin.essentials.1.7.5.nupkg.sha512",
+    "C:\\Users\\ermer\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Intune.Tunnel.MAM.Xamarin.iOS. No packages exist with this id in source(s): Intune_Consumption-Common",
+      "libraryId": "Microsoft.Intune.Tunnel.MAM.Xamarin.iOS",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-arm64",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}
