@@ -11,6 +11,8 @@ ios/**/build/**
 
 # build files from samples
 **/**/build/**
+**/**/bin/**
+**/**/obj/**
 
 # ignore framework files in sample apps
 **/*/Frameworks/*
