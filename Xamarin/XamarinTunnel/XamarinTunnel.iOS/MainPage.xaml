@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinTunnel.iOS.MainPage">
+    <Grid Margin="0,30,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+
+            </Grid.ColumnDefinitions>
+            <Entry x:Name="url" Text="https://www.bing.com" Keyboard="Url" />
+            <StackLayout Orientation="Horizontal" Grid.Column="1">
+                <Button Text="Bing"  Clicked="Button1_Clicked" />
+                <Button Text="IP Chicken" Clicked="Button2_Clicked" />
+                <Button x:Name="refresh" Text="Refresh" Clicked="refresh_Clicked" />
+                <Label x:Name="status" Text="" WidthRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Button x:Name="toggleConnection" Text="Connect" Clicked="toggleConnection_Clicked" />
+            </StackLayout>
+        </Grid>
+        <WebView Grid.Row="1"
+                 x:Name="webView"
+                 BindingContext="{x:Reference url}"
+                 Source="{Binding Path=Text, UpdateSourceEventName=Completed}" />
+
+    </Grid>
+</ContentPage>
+
