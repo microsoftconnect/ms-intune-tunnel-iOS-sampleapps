@@ -1,4 +1,7 @@
-﻿using Microsoft.Intune.Tunnel.MAM.iOS;
+﻿//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+using Microsoft.Intune.Tunnel.MAM.iOS;
 using Xamarin.Forms;
 
 namespace XamarinTunnel.iOS

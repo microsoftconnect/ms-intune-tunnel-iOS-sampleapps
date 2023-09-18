@@ -1,4 +1,7 @@
-﻿using System;
+﻿//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+using System;
 using Microsoft.Intune.Tunnel.MAM.iOS;
 using System.Collections.Generic;
 using Microsoft.Intune.MAM;

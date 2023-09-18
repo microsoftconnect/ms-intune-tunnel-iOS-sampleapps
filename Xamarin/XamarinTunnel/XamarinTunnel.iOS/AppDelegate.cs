@@ -1,4 +1,7 @@
-﻿using Foundation;
+﻿//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+using Foundation;
 using Microsoft.Intune.Tunnel.MAM.iOS;
 using UIKit;
 
