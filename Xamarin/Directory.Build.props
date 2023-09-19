@@ -1,0 +1,79 @@
+<Project>
+    <PropertyGroup>
+        <ApplicationId></ApplicationId>
+        <ApplicationTitle>xPlat-Tunnel</ApplicationTitle>
+        <ClientId></ClientId>
+        <TenantId></TenantId>
+    </PropertyGroup>
+    <Import Condition="Exists('$(MSBuildThisFileDirectory)Developer.props')" Project="$(MSBuildThisFileDirectory)Developer.props" />
+    <PropertyGroup>
+      <CollectAppManifestsDependsOn>
+        GeneratePartialAppManifests;
+        AddPartialAppManifests;
+        $(CollectAppManifestsDependsOn);
+      </CollectAppManifestsDependsOn>
+    </PropertyGroup>
+    <Target Name="GeneratePartialAppManifests">
+      <PropertyGroup>
+        <GeneratedManifestPath>$(IntermediateOutputPath)AppSettings.plist</GeneratedManifestPath>
+      </PropertyGroup>
+      <ItemGroup>
+        <Line Include='&lt;%3Fxml version="1.0" encoding="utf-8"%3F&gt;' />
+        <Line Include='&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;' />
+        <Line Include='&lt;plist version="1.0"&gt;' />
+        <Line Include='&lt;/plist&gt;' />
+      </ItemGroup>
+      <WriteLinesToFile
+         File="$(GeneratedManifestPath)"
+         Lines="@(Line)"
+         Overwrite="true"
+     />
+      <PropertyGroup>
+        <GeneratedPlist>
+            <dict>
+	            <key>CFBundleDisplayName</key>
+	            <string>$(ApplicationTitle)</string>
+	            <key>CFBundleIdentifier</key>
+	            <string>$(ApplicationId)</string>
+	            <key>CFBundleName</key>
+	            <string>$(ApplicationTitle)</string>
+	            <key>CFBundleURLTypes</key>
+	            <array>
+		            <dict>
+			            <key>CFBundleTypeRole</key>
+			            <string>None</string>
+			            <key>CFBundleURLName</key>
+			            <string>$(ApplicationId)</string>
+			            <key>CFBundleURLSchemes</key>
+			            <array>
+				            <string>msauth.$(ApplicationId)</string>
+				            <string>msauth.$(ApplicationId)-intunemam</string>
+				            <string>msauth.com.microsoft.intunemam</string>
+			            </array>
+		            </dict>
+	            </array>
+	            <key>IntuneMAMSettings</key>
+	            <dict>
+		            <key>ADALAuthority</key>
+		            <string>https://login.microsoftonline.com/$(TenantId)</string>
+		            <key>ADALClientId</key>
+		            <string>$(ClientId)</string>
+		            <key>ADALRedirectUri</key>
+		            <string>msauth.$(ApplicationId)://auth</string>
+	            </dict>
+            </dict>
+        </GeneratedPlist>    
+      </PropertyGroup>
+      <XmlPoke XmlInputPath="$(IntermediateOutputPath)AppSettings.plist"
+               Value="$(GeneratedPlist)"
+               Query="/plist" />
+    </Target>
+    <Target Name="AddPartialAppManifests">
+      <ItemGroup>
+        <PartialAppManifest Include="$(IntermediateOutputPath)AppSettings.plist" />
+      </ItemGroup>
+    </Target>
+    <Target Name="VerifyIdentifiersAreSet" BeforeTargets="Build">
+        <Error Condition="'$(ApplicationId)' == '' Or '$(ClientId)' == '' Or '$(TenantId)' == ''" Text="Provide ApplicationId, ClientId and TenantId in the '$(MSBuildThisFileDirectory)Directory.Build.props' or '$(MSBuildThisFileDirectory)Developer.props' file" />
+    </Target>
+</Project>
