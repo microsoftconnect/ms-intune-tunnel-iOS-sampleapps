@@ -10,8 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{F5CB3B9D-069F-4EEB-986C-1217B94E0272}"
 	ProjectSection(SolutionItems) = preProject
 		..\Directory.Build.props = ..\Directory.Build.props
-		..\Developer.props = ..\Developer.props
-		..\..\NuGet.Config = ..\..\NuGet.Config
 	EndProjectSection
 EndProject
 Global
